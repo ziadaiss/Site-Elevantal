@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 100% 100%; /* White */
+  --foreground: 224 71% 4%; /* Dark Blue */
+  --card: 255 100% 100%;
+  --card-foreground: 224 71% 4%;
+  --popover: 255 100% 100%;
+  --popover-foreground: 224 71% 4%;
+  --primary: 14 69% 61%; /* Terracotta/Dusty Rose */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 240 5% 96%; /* Light Gray */
+  --secondary-foreground: 224 71% 4%;
+  --muted: 240 5% 96%;
+  --muted-foreground: 240 4% 46%;
+  --accent: 240 5% 96%;
+  --accent-foreground: 224 71% 4%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 240 6% 90%;
+  --input: 240 6% 90%;
+  --ring: 14 69% 61%;
+  --radius: 0.75rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --accordion-down-height: 0;
+  }
+}
+
+@layer utilities {
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 1rem));
+    }
+  }
+
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary), 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+.prose .blockquote-custom {
+  @apply border-l-4 border-brand-purple bg-brand-purple/10 p-4 my-6 rounded-r-lg;
+}
+
+.prose .blockquote-custom p {
+  @apply text-lg font-semibold text-brand-dark not-italic;
+}
