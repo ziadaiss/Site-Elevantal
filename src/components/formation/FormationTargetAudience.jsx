@@ -47,10 +47,10 @@ const itemVariants = {
 
 const FormationTargetAudience = () => {
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="reveal py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-12"

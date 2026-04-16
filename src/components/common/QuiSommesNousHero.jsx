@@ -14,7 +14,7 @@ const QuiSommesNousHero = ({
     // This functionality will trigger a toast notification if handleNotImplemented is passed.
     handleNotImplemented();
   };
-  return <section className="overflow-hidden py-24 lg:py-32"
+  return <section className="reveal overflow-hidden py-24 lg:py-32"
   // Apply gradient background to the section
   style={{
     background: 'linear-gradient(to right, #03091f, #0a1642, #152d7f)'
@@ -23,10 +23,10 @@ const QuiSommesNousHero = ({
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{
           opacity: 0,
-          x: -50
+          y: 40
         }} animate={{
           opacity: 1,
-          x: 0
+          y: 0
         }} transition={{
           duration: 0.8,
           ease: "easeOut"

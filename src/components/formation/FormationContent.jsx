@@ -1,132 +1,97 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Check, Info } from 'lucide-react';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-
-const contentItems = [{
-  title: "Formation sur la méthode RHévélation (1 journée en présentiel ou distanciel)",
-  description: "La méthode complète pour transformer votre recrutement, de l'audit à la mesure des KPIs.",
-  value: "1 500 €",
-  highlight: false
-}, {
-  title: "Outils #1 : Guide Pratique Expérience Candidat",
-  description: "Le support complet de la formation avec tous les templates et checklists.",
-  value: "250 €",
-  highlight: true
-}, {
-  title: "Outils #2 : Kit Marque Employeur",
-  description: "Templates de posts LinkedIn, guide de rédaction d'annonces et stratégie de contenu.",
-  value: "950 €",
-  highlight: true
-}, {
-  title: "Outils #3 : Tableau de Bord KPI Recrutement",
-  description: "L'outil Excel prêt à l'emploi pour piloter votre performance.",
-  value: "150 €",
-  highlight: true
-}, {
-  title: "Support Post-Formation",
-  description: "Réponses à vos questions par email or message direct pour l'implémentation.",
-  value: "Entre 900 et +2000€",
-  highlight: false
-}];
 
 const FormationContent = () => {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-brand-dark mb-4">
-              La méthode RHévélation n'est pas qu'une formation, c'est un système complet
-            </h2>
-            <p className="text-xl text-gray-600">
-              La valeur réelle de ce que vous obtenez
-            </p>
-          </div>
+    <>
+      <style>{`
+        .inclus{padding:100px 0;position:relative;overflow:hidden;background:linear-gradient(180deg,#040a23 0%,#09153f 50%,#132873 100%);color:#fff}
+        .inclus .container{max-width:1200px;margin:0 auto;padding:0 24px}
+        .inclus-inner{position:relative;text-align:center}
+        .inclus-watermark{font-size:clamp(80px,14vw,160px);font-weight:900;line-height:.9;letter-spacing:-.04em;color:#fff;opacity:.04;position:absolute;top:-20px;left:50%;transform:translateX(-50%);white-space:nowrap;pointer-events:none;user-select:none}
+        .inclus-inner h2{font-size:clamp(24px,3.5vw,36px);font-weight:800;line-height:1.2;margin-bottom:80px;position:relative}
+        .inclus-inner h2 .grad{background:linear-gradient(90deg,#5264e4,#427ede,#3598d9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .inclus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
+        .inclus-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:0;overflow:hidden;transition:.4s}
+        .inclus-card:hover{background:rgba(255,255,255,.08);transform:translateY(-6px);border-color:rgba(255,255,255,.15)}
+        .inclus-card-icon{height:160px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+        .inclus-card-icon::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40px;background:linear-gradient(to top,rgba(4,10,35,.6),transparent);pointer-events:none}
+        .ici-1{background:linear-gradient(135deg,rgba(82,100,228,.15),rgba(53,152,217,.1))}
+        .ici-2{background:linear-gradient(135deg,rgba(53,152,217,.15),rgba(66,126,222,.1))}
+        .ici-3{background:linear-gradient(135deg,rgba(66,126,222,.15),rgba(82,100,228,.1))}
+        .inclus-card-body{padding:28px 24px}
+        .inclus-card-body h4{font-size:17px;font-weight:700;line-height:1.3;margin-bottom:4px}
+        .inclus-card-body .card-sub{font-size:14px;font-weight:600;margin-bottom:14px;background:linear-gradient(90deg,#5264e4,#427ede,#3598d9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .inclus-card-body p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.75;font-weight:300}
+        .inclus-card-body p+p{margin-top:10px}
+        @media(max-width:900px){.inclus-grid{grid-template-columns:1fr}}
+      `}</style>
 
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="bg-brand-dark text-white">
-                    <th className="py-5 px-6 font-bold text-lg">Contenu du programme</th>
-                    <th className="py-5 px-6 font-bold text-lg text-right">Valeur réelle</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100">
-                  {contentItems.map((item, index) => (
-                    <motion.tr 
-                      key={index} 
-                      initial={{ opacity: 0, x: -20 }} 
-                      whileInView={{ opacity: 1, x: 0 }} 
-                      transition={{ delay: index * 0.1 }} 
-                      viewport={{ once: true }} 
-                      className="hover:bg-blue-50/30 transition-colors group"
-                    >
-                      <td className="py-5 px-6">
-                        <div className="flex items-start gap-3">
-                          <div className={`mt-1 flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center ${item.highlight ? 'bg-amber-100 text-amber-600' : 'bg-green-100 text-green-600'}`}>
-                            <Check className="w-3 h-3 stroke-[3]" />
-                          </div>
-                          <div>
-                            <div className="flex items-center gap-2">
-                              <span className={`font-bold ${item.highlight ? 'text-brand-blue' : 'text-brand-dark'}`}>
-                                {item.title}
-                              </span>
-                              <TooltipProvider>
-                                <Tooltip>
-                                  <TooltipTrigger asChild>
-                                    <button className="text-gray-400 hover:text-brand-blue transition-colors">
-                                      <Info className="w-4 h-4" />
-                                    </button>
-                                  </TooltipTrigger>
-                                  <TooltipContent className="max-w-xs bg-brand-dark text-white border-none">
-                                    <p>{item.description}</p>
-                                  </TooltipContent>
-                                </Tooltip>
-                              </TooltipProvider>
-                            </div>
-                            {item.highlight && (
-                              <span className="inline-block mt-1 px-2 py-0.5 bg-amber-100 text-amber-700 text-[10px] font-bold uppercase tracking-wider rounded">
-                                Inclus dans l'offre
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                      </td>
-                      <td className="py-5 px-6 text-right">
-                        <span className={`font-mono font-bold text-lg ${item.highlight ? 'text-brand-blue' : 'text-gray-500'}`}>
-                          {item.value}
-                        </span>
-                      </td>
-                    </motion.tr>
-                  ))}
-                </tbody>
-                <tfoot>
-                  <tr className="bg-gray-50">
-                    <td className="py-6 px-6">
-                      <span className="text-xl font-extrabold text-brand-dark italic uppercase tracking-tight">Valeur totale du système</span>
-                    </td>
-                    <td className="py-6 px-6 text-right">
-                      <div className="relative inline-block">
-                        <span className="text-2xl font-black text-brand-blue font-mono whitespace-nowrap">À partir de 3 750€</span>
-                        <div className="absolute -bottom-1 left-0 w-full h-1 bg-brand-blue/30 rounded-full"></div>
-                      </div>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
+      <section className="inclus reveal">
+        <div className="container">
+          <div className="inclus-inner">
+            <div className="inclus-watermark">c'est inclus</div>
+            <h2>dans la formation <span className="grad">RHévélation</span></h2>
+            <div className="inclus-grid">
+
+              <div className="inclus-card">
+                <div className="inclus-card-icon ici-1">
+                  <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                    <rect x="12" y="16" width="48" height="40" rx="6" stroke="#5264e4" strokeWidth="2.5" fill="rgba(82,100,228,.1)"/>
+                    <path d="M12 28h48" stroke="#5264e4" strokeWidth="2"/>
+                    <circle cx="20" cy="22" r="2.5" fill="#5264e4"/>
+                    <circle cx="28" cy="22" r="2.5" fill="#427ede"/>
+                    <circle cx="36" cy="22" r="2.5" fill="#3598d9"/>
+                    <path d="M24 38h10M24 44h16" stroke="#427ede" strokeWidth="2" strokeLinecap="round"/>
+                    <rect x="44" y="34" width="10" height="14" rx="2" fill="rgba(53,152,217,.2)" stroke="#3598d9" strokeWidth="1.5"/>
+                    <path d="M47 40l2 2 3-4" stroke="#3598d9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="inclus-card-body">
+                  <h4>Pack IA Recruteur</h4>
+                  <div className="card-sub">agents IA + templates prêts à l'emploi</div>
+                  <p>Livre numérique de templates de communication candidat pour ne plus jamais repartir de zéro.</p>
+                  <p>Agent IA pour vos posts LinkedIn, votre calendrier éditorial, l'analyse de votre grille d'expérience candidat et la création de personas candidats.</p>
+                </div>
+              </div>
+
+              <div className="inclus-card">
+                <div className="inclus-card-icon ici-2">
+                  <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                    <rect x="14" y="14" width="44" height="44" rx="8" stroke="#427ede" strokeWidth="2.5" fill="rgba(66,126,222,.1)"/>
+                    <path d="M26 30l6 6 14-14" stroke="#3598d9" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M22 42h28M22 48h20" stroke="#5264e4" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>
+                </div>
+                <div className="inclus-card-body">
+                  <h4>Kit Marque Employeur</h4>
+                  <div className="card-sub">audit + outils opérationnels</div>
+                  <p>Grille d'audit de votre site carrière, guide de création et d'optimisation, agent IA pour votre communication interne et la rédaction de vos offres d'emploi.</p>
+                  <p>Modèle de landing page carrière + formulaire NPS candidat prêt à déployer.</p>
+                </div>
+              </div>
+
+              <div className="inclus-card">
+                <div className="inclus-card-icon ici-3">
+                  <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                    <circle cx="36" cy="32" r="18" stroke="#5264e4" strokeWidth="2.5" fill="rgba(82,100,228,.1)"/>
+                    <path d="M36 22v10l7 5" stroke="#427ede" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M24 54h24" stroke="#3598d9" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M28 58h16" stroke="#3598d9" strokeWidth="2" strokeLinecap="round" opacity=".5"/>
+                  </svg>
+                </div>
+                <div className="inclus-card-body">
+                  <h4>6 webinaires privés</h4>
+                  <div className="card-sub">+ coaching post-formation (6×1h)</div>
+                  <p>Accès illimité pendant 1 an à 6 webinaires exclusifs pour approfondir chaque thématique à votre rythme.</p>
+                  <p>6 séances de coaching individuel sur-mesure pour passer à l'action, lever les blocages terrain et ancrer les apprentissages dans votre quotidien.</p>
+                </div>
+              </div>
+
             </div>
           </div>
-          
-          <div className="mt-8 text-center">
-            <p className="text-gray-500 italic text-sm">
-              * Tarifs donnés à titre indicatif pour la valeur du contenu. Consultez la section tarifs pour nos offres packagées.
-            </p>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

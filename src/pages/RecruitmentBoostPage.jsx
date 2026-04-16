@@ -3,17 +3,19 @@ import { Helmet } from 'react-helmet';
 import RecruitmentBoostHero from '@/components/recruitment-boost/RecruitmentBoostHero';
 import WhyImproveExperience from '@/components/recruitment-boost/WhyImproveExperience';
 import ForYouSection from '@/components/recruitment-boost/ForYouSection';
-import RecruitmentTestimonials from '@/components/recruitment-boost/RecruitmentTestimonials';
+import AccompagnementTimeline from '@/components/recruitment-boost/AccompagnementTimeline';
 import AboutMe from '@/components/landing/AboutMe';
 import Testimonials from '@/components/landing/Testimonials';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 
 const RecruitmentBoostPage = ({ handleNotImplemented }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useScrollReveal();
 
   const calendlyUrl = "https://calendly.com/contact-elevantal/premier-echange";
   const handleCalendlyRedirect = () => {
@@ -50,7 +52,7 @@ const RecruitmentBoostPage = ({ handleNotImplemented }) => {
       <WhyImproveExperience handleNotImplemented={handleNotImplemented} />
       <ForYouSection />
 
-      <RecruitmentTestimonials />
+      <AccompagnementTimeline />
       <AboutMe />
       <Testimonials />
       <section className="py-16 md:py-24 bg-gray-50">

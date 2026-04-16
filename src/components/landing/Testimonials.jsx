@@ -107,11 +107,11 @@ const Testimonials = () => {
   const col2 = [testimonialsData[2], testimonialsData[3], testimonialsData[7]];
   const col3 = [testimonialsData[4], testimonialsData[5], testimonialsData[0]]; // Reuse some for filler
 
-  return <section id="temoignages" className="py-20 md:py-28 bg-slate-50 overflow-hidden">
+  return <section id="temoignages" className="reveal py-20 md:py-28 bg-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 
-            className="text-4xl md:text-5xl font-bold mb-6 tracking-tight"
+          <h2
+            className="reveal text-4xl md:text-5xl font-bold mb-6 tracking-tight"
             style={{ 
               backgroundImage: 'linear-gradient(to right, #5264e4, #427ede, #3598d9)',
               WebkitBackgroundClip: 'text',
@@ -122,7 +122,7 @@ const Testimonials = () => {
           >
             Nos avis clients sont unanimes
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">Découvrez les retours de ceux qui ont transformé leur expérience candidat avec nous.</p>
+          <p className="reveal reveal-d1 text-lg text-gray-600 max-w-2xl mx-auto">Découvrez les retours de ceux qui ont transformé leur expérience candidat avec nous.</p>
         </div>
 
         <div className="relative h-[600px] md:h-[700px] overflow-hidden">

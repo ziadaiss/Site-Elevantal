@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 const FormationCoreSkills = () => {
   const objectives = ["Expliquer les enjeux stratégiques de l'expérience candidat", "Mettre en perspective son parcours de recrutement actuel", "Mettre en place un plan d'action d'amélioration ou de création d'une expérience candidat fluide et différenciante", "Construire une posture de recruteur mémorable", "Expliquer le lien entre expérience candidat et marque employeur pour favoriser une image cohérente et attractive", "Optimiser sa présence employeur en ligne et gagner en e-réputation", "Construire une stratégie de contenu RH régulière et crédible pour renforcer et valoriser sa marque employeur sur la durée"];
-  return <section className="py-20 md:py-24 bg-slate-50">
+  return <section className="reveal py-20 md:py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -31,10 +31,10 @@ const FormationCoreSkills = () => {
             <ul className="grid grid-cols-1 gap-5 md:gap-6">
               {objectives.map((objective, index) => <motion.li key={index} initial={{
               opacity: 0,
-              x: -20
+              y: 20
             }} whileInView={{
               opacity: 1,
-              x: 0
+              y: 0
             }} viewport={{
               once: true
             }} transition={{

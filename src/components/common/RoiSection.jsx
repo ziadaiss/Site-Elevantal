@@ -12,12 +12,12 @@ const RoiSection = () => {
   const imageUrl = "https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/7627f494482bc5b503a97ca91289ee91.png";
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="reveal py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Elevantal : plus qu'une agence, votre partenaire pour élever votre expérience candidat</h2>
@@ -43,8 +43,8 @@ const RoiSection = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mt-10 lg:mt-0"
           >

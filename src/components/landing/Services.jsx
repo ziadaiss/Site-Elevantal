@@ -65,7 +65,7 @@ const Services = ({
 }) => {
   return (
     // Updated section background gradient
-    <section id="services" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#03091f] via-[#0a1642] to-[#152d7f]">
+    <section id="services" className="reveal py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#03091f] via-[#0a1642] to-[#152d7f]">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{
           opacity: 0,

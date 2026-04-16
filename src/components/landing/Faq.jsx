@@ -15,7 +15,7 @@ const Faq = () => {
     question: "Est-ce accessible aux personnes en situation de handicap ?",
     answer: "Tout à fait. Nous adaptons nos modalités pédagogiques en fonction des besoins spécifiques : visuels, auditifs, moteurs ou cognitifs. Mentionnez-le lors de la prise de contact."
   }];
-  return <section id="faq" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+  return <section id="faq" className="reveal py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-4xl mx-auto">
         <motion.div initial={{
         opacity: 0,

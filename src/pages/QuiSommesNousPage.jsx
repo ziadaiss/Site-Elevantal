@@ -5,12 +5,14 @@ import FloatingStatsCard from '@/components/common/FloatingStatsCard';
 import Testimonials from '@/components/landing/Testimonials';
 import CTA from '@/components/landing/CTA.jsx';
 import RoiSection from '@/components/common/RoiSection.jsx';
-import QuickWinsSection from '@/components/common/QuickWinsSection.jsx';
+import GenerateurRefusPromo from '@/components/common/GenerateurRefusPromo.jsx';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const QuiSommesNousPage = ({ handleNotImplemented }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useScrollReveal();
 
   return (
     <>
@@ -20,16 +22,16 @@ const QuiSommesNousPage = ({ handleNotImplemented }) => {
       </Helmet>
 
       <QuiSommesNousHero handleNotImplemented={handleNotImplemented} />
-      
+
       {/* FloatingStatsCard is self-contained with responsive grid layout (stack on mobile, row on desktop) */}
       <FloatingStatsCard />
-      
+
       <RoiSection handleNotImplemented={handleNotImplemented} />
 
-      <QuickWinsSection />
-      
+      <GenerateurRefusPromo />
+
       <Testimonials />
-      
+
       <CTA />
     </>
   );

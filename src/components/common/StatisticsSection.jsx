@@ -40,7 +40,7 @@ const FrustrationCard = ({
     <p className="text-gray-600 flex-grow">{text}</p>
   </motion.div>;
 const StatisticsSection = () => {
-  return <section className="py-16 md:py-24 bg-gray-50">
+  return <section className="reveal py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2 initial={{
         opacity: 0,

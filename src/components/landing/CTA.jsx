@@ -5,7 +5,7 @@ const CTA = () => {
   const handleRedirect = () => {
     window.open('https://services-elevantal.systeme.io/newsletter', '_blank', 'noopener,noreferrer');
   };
-  return <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  return <section className="reveal py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-5xl mx-auto text-center">
         <motion.div initial={{
         opacity: 0,

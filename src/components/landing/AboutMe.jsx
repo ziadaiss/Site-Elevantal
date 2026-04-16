@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 const AboutMe = () => {
-  return <section id="about-me" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+  return <section id="about-me" className="reveal py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{
         opacity: 0,

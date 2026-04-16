@@ -20,17 +20,17 @@ const FormationHero = ({
       handleNotImplemented();
     }
   };
-  return <section className="overflow-hidden pt-24 lg:pt-32" style={{
+  return <section className="overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-20" style={{
     background: 'linear-gradient(135deg, #03091f, #0a1642, #152d7f)'
   }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <motion.div initial={{
           opacity: 0,
-          x: -50
+          y: 40
         }} animate={{
           opacity: 1,
-          x: 0
+          y: 0
         }} transition={{
           duration: 0.8,
           ease: "easeOut"

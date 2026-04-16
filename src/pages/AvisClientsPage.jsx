@@ -1,8 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Testimonials from '@/components/landing/Testimonials';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const AvisClientsPage = () => {
+  useScrollReveal();
   return (
     <>
       <Helmet>

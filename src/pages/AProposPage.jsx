@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import AboutMe from '@/components/landing/AboutMe';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const AProposPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useScrollReveal();
 
   return (
     <>
@@ -17,7 +19,6 @@ const AProposPage = () => {
         <div className="pt-24 md:pt-32">
           <AboutMe />
         </div>
-        {/* Vous pouvez ajouter d'autres sections spécifiques à la page "À propos" ici */}
       </div>
     </>
   );

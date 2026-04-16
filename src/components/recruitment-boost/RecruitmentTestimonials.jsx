@@ -103,7 +103,7 @@ const RecruitmentTestimonials = () => {
 
   return (
     <section 
-      className="py-16 md:py-24 text-white overflow-hidden"
+      className="reveal py-16 md:py-24 text-white overflow-hidden"
       style={{
         background: 'linear-gradient(to right, #03091f, #0a1642, #152d7f)'
       }}

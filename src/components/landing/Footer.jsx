@@ -47,6 +47,7 @@ const Footer = ({
                 <li><FooterLink to="/ebook-experience-candidat">Tableur KPIs Expérience Candidat</FooterLink></li>
                 <li><FooterLink to="/formation-rRevelation">Formation RHévélation</FooterLink></li>
                 <li><FooterLink to="/recruitment-experience-boost">Recruitment Experience Boost</FooterLink></li>
+                <li><FooterLink to="/generateur-refus">Générateur de refus</FooterLink></li>
               </ul>
             </div>
 

@@ -18,6 +18,7 @@ import PolitiqueConfidentialitePage from '@/pages/PolitiqueConfidentialitePage';
 import CGVPage from '@/pages/CGVPage';
 import EbookPage from '@/pages/EbookPage';
 import QuiSommesNousPage from '@/pages/QuiSommesNousPage';
+import GenerateurRefusPage from '@/pages/GenerateurRefusPage';
 
 function App() {
   const { toast } = useToast();
@@ -48,6 +49,7 @@ function App() {
             <Route path="/tableur-experience-candidat" element={<EbookPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/formation-rRevelation" element={<FormationPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/recruitment-experience-boost" element={<RecruitmentBoostPage handleNotImplemented={handleNotImplemented} />} />
+            <Route path="/generateur-refus" element={<GenerateurRefusPage />} />
             <Route path="/agence" element={<AgencePage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/avis-clients" element={<AvisClientsPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/a-propos" element={<AProposPage handleNotImplemented={handleNotImplemented} />} />

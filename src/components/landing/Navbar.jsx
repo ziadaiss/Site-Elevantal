@@ -73,29 +73,35 @@ const Navbar = ({
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-base bg-transparent hover:bg-gray-100 rounded-full">Nos services</NavigationMenuTrigger>
-                    <NavigationMenuContent className="p-0 bg-transparent">
-                      <div className="grid grid-cols-1 md:grid-cols-[280px,auto] gap-x-6 w-[750px]">
-                        <ul className="grid gap-3 content-center p-4">
-                          <ListItem href="/formation-rRevelation" title="La Méthode RHévélation">
-                            Réduisez de 30% vos délais de recrutement
-                          </ListItem>
-                          <ListItem href="/recruitment-experience-boost" title="L'accompagnement RHévélation">
-                            Economisez 60 000€ de recrutement raté
-                          </ListItem>
-                        </ul>
-                        <div className="relative w-[400px] h-[225px] hidden md:flex items-center overflow-hidden rounded-md">
-                          <Link to="/tableur-experience-candidat" className="absolute inset-0 z-10 block w-full h-full">
-                            <img src="https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/a786fa429dd414e777549463b67f2e69.png" alt="KPIs expérience candidat" className="w-full h-full object-cover" />
-                            <div className="absolute inset-0 bg-black/0 transition-colors duration-300"></div>
-                          </Link>
-                        </div>
-                      </div>
+                    <NavigationMenuContent className="p-0 bg-white rounded-md shadow-lg">
+                      <ul className="grid w-[350px] gap-3 p-4">
+                        <ListItem href="/formation-rRevelation" title="La Méthode RHévélation">
+                          Réduisez de 30% vos délais de recrutement
+                        </ListItem>
+                        <ListItem href="/recruitment-experience-boost" title="L'accompagnement RHévélation">
+                          Economisez 60 000€ de recrutement raté
+                        </ListItem>
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="text-base bg-transparent hover:bg-gray-100 rounded-full">Nos outils</NavigationMenuTrigger>
+                    <NavigationMenuContent className="p-0 bg-white rounded-md shadow-lg">
+                      <ul className="grid w-[350px] gap-3 p-4">
+                        <ListItem href="/generateur-refus" title="Générateur de refus">
+                          Générez un mail de refus personnalisé en 10s
+                        </ListItem>
+                        <ListItem href="/tableur-experience-candidat" title="KPIs expérience candidat">
+                          Obtenez la performance de vos recrutements
+                        </ListItem>
+                      </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-base bg-transparent hover:bg-gray-100 rounded-full">L'agence Elevantal</NavigationMenuTrigger>
-                    <NavigationMenuContent className="p-0 bg-transparent">
+                    <NavigationMenuContent className="p-0 bg-white rounded-md shadow-lg">
                       <ul className="grid w-[350px] gap-3 p-4">
                          <ListItem href="/qui-sommes-nous" title="Qui sommes-nous ?">
                           Découvrez ce que nous faisons
@@ -139,13 +145,18 @@ const Navbar = ({
     }} className="fixed top-16 left-0 w-full bg-white/95 backdrop-blur-lg z-40 p-4 shadow-lg md:hidden">
         <ul className="flex flex-col space-y-4">
            <li>
-            <Link to="/tableur-experience-candidat" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold">Tableur Expérience Candidat</Link>
+            <span className="block py-2 text-xs font-bold uppercase text-gray-400 tracking-wider">Nos services</span>
+            <Link to="/formation-rRevelation" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">La Méthode RHévélation</Link>
           </li>
           <li>
-            <Link to="/formation-rRevelation" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold">La Méthode RHévélation</Link>
+            <Link to="/recruitment-experience-boost" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">L'accompagnement RHévélation</Link>
+          </li>
+          <li className="pt-2">
+            <span className="block py-2 text-xs font-bold uppercase text-gray-400 tracking-wider">Nos outils</span>
+            <Link to="/generateur-refus" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">Générateur de refus</Link>
           </li>
           <li>
-            <Link to="/recruitment-experience-boost" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold">L'accompagnement RHévélation</Link>
+            <Link to="/tableur-experience-candidat" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">KPIs expérience candidat</Link>
           </li>
           <li>
             <Link to="/qui-sommes-nous" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold">Qui sommes-nous ?</Link>

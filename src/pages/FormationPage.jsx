@@ -8,11 +8,13 @@ import Testimonials from '@/components/landing/Testimonials';
 import FormationFaq from '@/components/formation/FormationFaq';
 import FormationPricing from '@/components/formation/FormationPricing';
 import FormationContent from '@/components/formation/FormationContent';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const FormationPage = ({ handleNotImplemented }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useScrollReveal();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -55,21 +57,21 @@ const FormationPage = ({ handleNotImplemented }) => {
       <div onClick={handleHeroClick} className="w-full">
         <FormationHero handleNotImplemented={handleNotImplemented} />
       </div>
-      
+
       <FormationTargetAudience />
-      
+
       <AboutMe /> {/* "Pourquoi collaborer avec moi ?" section */}
 
       <FormationCoreSkills />
 
       <FormationContent /> {/* "La valeur réelle de ce que vous obtenez" section */}
-      
+
       {/* MagicWandSection has been removed as requested */}
-      
+
       <Testimonials />
 
       <FormationPricing handleNotImplemented={handleNotImplemented} />
-      
+
       <FormationFaq />
     </>
   );

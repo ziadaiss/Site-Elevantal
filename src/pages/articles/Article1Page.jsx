@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const QuoteBlock = ({ children }) => (
   <blockquote className="blockquote-custom">
@@ -18,6 +19,7 @@ const Article1Page = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useScrollReveal();
   return (
     <>
       <Helmet>
@@ -25,7 +27,7 @@ const Article1Page = () => {
         <meta name="description" content="Découvrez pourquoi l'expérience candidat est devenue un pilier stratégique pour attirer et retenir les talents." />
       </Helmet>
 
-      <header className="bg-brand-blue-gradient text-white py-20 md:py-28">
+      <header className="bg-brand-blue-gradient text-white py-20 md:py-28 reveal">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +42,7 @@ const Article1Page = () => {
 
       <main className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <article className="prose lg:prose-xl prose-indigo mx-auto text-gray-700">
+          <article className="prose lg:prose-xl prose-indigo mx-auto text-gray-700 reveal">
             <p>En 2025, l’expérience candidat n’est plus un "plus" pour les entreprises qui recrutent, c’est devenu une nécessité.</p>
             <p>C’est un standard attendu, et une arme stratégique dans un marché du travail sous tension.</p>
             

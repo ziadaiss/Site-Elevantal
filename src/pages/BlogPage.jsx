@@ -2,11 +2,13 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import BlogHero from '@/components/blog/BlogHero';
 import BlogGrid from '@/components/blog/BlogGrid';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const BlogPage = ({ handleNotImplemented }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useScrollReveal();
 
   return (
     <>

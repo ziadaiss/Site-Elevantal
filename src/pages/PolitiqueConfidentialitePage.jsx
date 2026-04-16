@@ -1,26 +1,28 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const PolitiqueConfidentialitePage = () => {
+  useScrollReveal();
   return (
     <>
       <Helmet>
         <title>Politique de Confidentialité - Elevantal</title>
         <meta name="description" content="Consultez la politique de confidentialité de Elevantal." />
       </Helmet>
-      
+
       <div className="bg-brand-background min-h-screen py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-dark mb-8 reveal">
             Politique de Confidentialité
           </h1>
-          
+
           <div className="space-y-8 text-gray-700 leading-relaxed">
-            <p className="text-lg">
+            <p className="text-lg reveal reveal-d1">
               La présente politique de confidentialité régit la manière dont le site Elevantal recueille, utilise, conserve et divulgue les informations recueillies auprès des utilisateurs (individuellement appelé « Utilisateur ») du site internet (appelé « Site »). La présente politique de confidentialité s'applique au Site et à tous les produits et services offerts par Elevantal.
             </p>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Données d'identification personnelle
               </h2>
@@ -35,7 +37,7 @@ const PolitiqueConfidentialitePage = () => {
               </p>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Données d'identification non personnelles
               </h2>
@@ -44,7 +46,7 @@ const PolitiqueConfidentialitePage = () => {
               </p>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Cookies de navigateur web
               </h2>
@@ -56,7 +58,7 @@ const PolitiqueConfidentialitePage = () => {
               </p>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Utilisation des données collectées
               </h2>
@@ -96,7 +98,7 @@ const PolitiqueConfidentialitePage = () => {
               </ul>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Comment nous protégeons vos données
               </h2>
@@ -105,7 +107,7 @@ const PolitiqueConfidentialitePage = () => {
               </p>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Partage de vos données personnelles
               </h2>
@@ -117,7 +119,7 @@ const PolitiqueConfidentialitePage = () => {
               </p>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Sites internet de tiers
               </h2>
@@ -132,7 +134,7 @@ const PolitiqueConfidentialitePage = () => {
               </p>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Modifications de la présente politique de confidentialité
               </h2>
@@ -144,7 +146,7 @@ const PolitiqueConfidentialitePage = () => {
               </p>
             </section>
 
-            <section>
+            <section className="reveal">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">
                 Votre acceptation de ces conditions
               </h2>

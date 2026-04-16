@@ -18,8 +18,8 @@ const FormationDetails = ({ handleNotImplemented }) => {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div 
-            initial={{ opacity: 0, x: -50 }} 
-            whileInView={{ opacity: 1, x: 0 }} 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: true }} 
             transition={{ duration: 0.8 }}
             className="relative">
@@ -30,8 +30,8 @@ const FormationDetails = ({ handleNotImplemented }) => {
           </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0, x: 50 }} 
-            whileInView={{ opacity: 1, x: 0 }} 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: true }} 
             transition={{ duration: 0.8 }} 
             className="space-y-6">
@@ -47,8 +47,8 @@ const FormationDetails = ({ handleNotImplemented }) => {
               {objectives.map((item, index) => (
                 <motion.div 
                   key={index} 
-                  initial={{ opacity: 0, x: 20 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }} 
                   viewport={{ once: true }} 
                   transition={{ delay: index * 0.1 }} 
                   className="flex items-start space-x-3">

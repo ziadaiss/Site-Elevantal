@@ -27,17 +27,17 @@ const Hero = ({
       stroke: "url(#check-gradient)"
     }} />
     </div>;
-  return <section id="accueil" className="relative min-h-[90vh] flex items-center pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-[linear-gradient(135deg,#020617_0%,#1e40af_100%)]">
+  return <section id="accueil" className="reveal relative min-h-[90vh] flex items-center pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-[linear-gradient(135deg,#020617_0%,#1e40af_100%)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Text */}
           <motion.div initial={{
           opacity: 0,
-          x: -50
+          y: 40
         }} animate={{
           opacity: 1,
-          x: 0
+          y: 0
         }} transition={{
           duration: 0.8,
           ease: "easeOut"
@@ -81,10 +81,10 @@ const Hero = ({
           {/* Right Column: Image */}
           <motion.div initial={{
           opacity: 0,
-          x: 50
+          y: 40
         }} animate={{
           opacity: 1,
-          x: 0
+          y: 0
         }} transition={{
           duration: 0.8,
           delay: 0.2,

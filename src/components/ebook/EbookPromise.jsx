@@ -4,15 +4,15 @@ import { Check } from 'lucide-react';
 const EbookPromise = () => {
   const points = ["Mesurer précisément vos délais de recrutement", "Détecter les abandons en cours de processus", "Calculer automatiquement votre NPS candidat", "Analyser votre coût par embauche"];
   const imageUrl = "https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/7a1727c6cd9ecdbe5de99b98a5907898.png";
-  return <section className="py-16 md:py-24 bg-gray-50">
+  return <section className="reveal py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           <motion.div initial={{
           opacity: 0,
-          x: -30
+          y: 30
         }} whileInView={{
           opacity: 1,
-          x: 0
+          y: 0
         }} viewport={{
           once: true,
           amount: 0.3
@@ -35,10 +35,10 @@ const EbookPromise = () => {
 
           <motion.div initial={{
           opacity: 0,
-          scale: 0.9
+          y: 30
         }} whileInView={{
           opacity: 1,
-          scale: 1
+          y: 0
         }} viewport={{
           once: true,
           amount: 0.3

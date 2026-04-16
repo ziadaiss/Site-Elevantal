@@ -5,7 +5,7 @@ const EbookHero = ({
   onCTAClick
 }) => {
   const imageUrl = "https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/ed516ad5e516b997e5e3a5cf61b8aad0.png";
-  return <section className="bg-brand-blue-gradient text-white pt-20 pb-16 md:pt-24 md:pb-20">
+  return <section className="reveal bg-brand-blue-gradient text-white pt-20 pb-16 md:pt-24 md:pb-20">
       <motion.div initial={{
       opacity: 0,
       y: 20

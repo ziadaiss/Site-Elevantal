@@ -8,12 +8,14 @@ import Frustrations from '@/components/landing/Frustrations';
 import StatisticsSection from '@/components/common/StatisticsSection';
 import Testimonials from '@/components/landing/Testimonials';
 import FloatingStatsCard from '@/components/common/FloatingStatsCard';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const HomePage = ({ handleNotImplemented }) => {
+  useScrollReveal();
   return (
     <>
       <Hero handleNotImplemented={handleNotImplemented} />
-      {/* FloatingStatsCard overlaps the bottom of Hero and top of StatisticsSection */}
+      {/* FloatingStatsCard has its own animation + negative margin overlap — no wrapper */}
       <FloatingStatsCard />
       <StatisticsSection />
       <Frustrations />

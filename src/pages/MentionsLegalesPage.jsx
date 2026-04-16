@@ -1,7 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const MentionsLegalesPage = () => {
+  useScrollReveal();
   return (
     <>
       <Helmet>
@@ -9,8 +11,8 @@ const MentionsLegalesPage = () => {
         <meta name="description" content="Consultez les mentions légales de Elevantal." />
       </Helmet>
       <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-extrabold text-brand-dark mb-8">Mentions Légales - Elevantal</h1>
-        <div className="prose lg:prose-xl">
+        <h1 className="text-4xl font-extrabold text-brand-dark mb-8 reveal">Mentions Légales - Elevantal</h1>
+        <div className="prose lg:prose-xl reveal reveal-d1">
           <p>
             Ce site est édité par la société Elevantal, société de formation et conseils en ressources humaines.
             <br />

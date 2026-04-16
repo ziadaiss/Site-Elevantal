@@ -11,7 +11,7 @@ const stats = [{
   text: 'Un recrutement long peut coûter jusqu’à 10 000 € en moyenne, sans compter les risques financiers liés à une erreur de casting, pouvant atteindre à minima 30 000 €.'
 }];
 const Frustrations = () => {
-  return <section id="frustrations" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  return <section id="frustrations" className="reveal py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{
         opacity: 0,

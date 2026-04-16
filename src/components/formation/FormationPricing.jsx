@@ -36,7 +36,7 @@ const plans = [
     highlighted: false,
     features: [
       "1 journée de formation en présentiel et distanciel",
-      "6 séances de coaching post-formation",
+      "Séances de coaching personnalisées",
       "Pack IA Recruteur (3 agents IA et livre numérique)",
       "Kit Marque Employeur (2 agents IA, grilles d'audit et modèles)",
       "Consolidation des compétences et réputation (Accès illimités à 6 webinaires privés durant 1 an)"
@@ -52,7 +52,7 @@ const FormationPricing = ({ handleNotImplemented }) => {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-gray-50">
+    <section className="reveal py-16 sm:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-brand-dark">Tarifs</h2>

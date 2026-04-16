@@ -10,6 +10,7 @@ import Testimonials from '@/components/landing/Testimonials';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const EbookPage = ({
   handleNotImplemented
@@ -17,6 +18,7 @@ const EbookPage = ({
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useScrollReveal();
   const ebookUrl = "https://services-elevantal.systeme.io/691c0248-55c3129f-5932e447"; // Updated URL
   const pageUrl = "https://elevantal.com/tableur-experience-candidat"; // Updated page URL
   const authorName = "Ziad Aissaoua";
@@ -66,7 +68,7 @@ const EbookPage = ({
 
       <EbookGuideContent />
       <EbookForm handleGetEbook={handleGetEbook} />
-      
+
       <Testimonials />
 
       <section className="py-16 md:py-24 bg-brand-blue-gradient text-white">
