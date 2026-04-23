@@ -18,7 +18,7 @@ const HomePage = ({ handleNotImplemented }) => {
       <div style={{ background: 'linear-gradient(135deg, #020617 0%, #0a1642 40%, #1e40af 100%)' }}>
         <HeroCarousel />
         <FloatingStatsCard />
-        <DarkToLight darkBg="linear-gradient(135deg, #020617 0%, #0a1642 40%, #1e40af 100%)" lightBg="#F3F4F6" />
+        <DarkToLight darkBg="transparent" lightBg="#F3F4F6" />
       </div>
       <StatisticsSection />
       <Frustrations />
