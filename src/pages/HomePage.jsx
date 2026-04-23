@@ -15,8 +15,8 @@ const HomePage = ({ handleNotImplemented }) => {
   useScrollReveal();
   return (
     <>
-      <HeroCarousel />
       <div style={{ background: '#0a1642' }}>
+        <HeroCarousel />
         <FloatingStatsCard />
         <DarkToLight darkBg="#0a1642" lightBg="#F3F4F6" />
       </div>

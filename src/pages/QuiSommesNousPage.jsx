@@ -22,9 +22,8 @@ const QuiSommesNousPage = ({ handleNotImplemented }) => {
         <meta name="description" content="Découvrez nos services, notre méthodologie et pourquoi Elevantal est le partenaire idéal pour transformer votre expérience candidat." />
       </Helmet>
 
-      <QuiSommesNousHero handleNotImplemented={handleNotImplemented} />
-
       <div style={{ background: 'linear-gradient(to right, #03091f, #0a1642, #152d7f)' }}>
+        <QuiSommesNousHero handleNotImplemented={handleNotImplemented} />
         <FloatingStatsCard />
         <DarkToLight darkBg="#0a1642" lightBg="#F9FAFB" />
       </div>
