@@ -24,9 +24,9 @@ const QuiSommesNousPage = ({ handleNotImplemented }) => {
 
       <QuiSommesNousHero handleNotImplemented={handleNotImplemented} />
 
-      <div style={{ background: '#152d7f' }}>
+      <div style={{ background: 'linear-gradient(to right, #03091f, #0a1642, #152d7f)' }}>
         <FloatingStatsCard />
-        <DarkToLight darkBg="#152d7f" lightBg="#F9FAFB" />
+        <DarkToLight darkBg="#0a1642" lightBg="#F9FAFB" />
       </div>
 
       <RoiSection handleNotImplemented={handleNotImplemented} />
