@@ -56,7 +56,7 @@ const QuickWinsSection = () => {
           >
             <img
               src={ebookImageUrl}
-              alt="Mockup de l'e-book sur différents appareils montrant le guide 'START-UPS TRANSFORMER VOS EXPERIENCES CANDIDATS AVEC CES 4 QUICK WINS'"
+              alt="Mockup de l'e-book sur différents appareils montrant le guide 'PME TRANSFORMER VOS EXPERIENCES CANDIDATS AVEC CES 4 QUICK WINS'"
               className="rounded-lg shadow-2xl max-w-full h-auto"
             />
           </motion.div>

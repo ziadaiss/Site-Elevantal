@@ -78,7 +78,7 @@ const Services = ({
           amount: 0.5
         }} className="text-center mb-16">
           {/* Updated text color to white */}
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Vous êtes RH ou recruteur d'une start-up ?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Vous êtes RH ou recruteur d'une PME ?</h2>
           <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">Construisez un parcours candidat fluide, marquant les esprits et qui fidélise avec Elevantal.</p>
         </motion.div>
 

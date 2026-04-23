@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import useScrollReveal from '@/hooks/useScrollReveal';
+import { DarkToLight, LightToDark, WhiteToGray, GrayToWhite } from '@/components/common/WaveSeparator';
 
 const EbookPage = ({
   handleNotImplemented
@@ -55,8 +56,11 @@ const EbookPage = ({
       </Helmet>
       
       <EbookHero onCTAClick={handleGetEbook} />
+      <DarkToLight darkBg="linear-gradient(to right, #5C67F2, #43A7F2)" lightBg="#F9FAFB" />
       <EbookPromise />
+      <GrayToWhite grayBg="#f9fafb" />
       <EbookForYou />
+      <WhiteToGray grayBg="#f9fafb" />
       {/* Wrapper to apply the desired background color to the AboutMe section */}
       <div className="bg-gray-50">
         <AboutMe />
@@ -66,11 +70,14 @@ const EbookPage = ({
         <Button onClick={handleGetEbook} size="lg" className="bg-brand-blue-gradient text-white px-10 py-8 rounded-lg font-bold text-lg shadow-lg transform hover:scale-105 transition-transform duration-300">Obtenir le tableur</Button>
       </div>
 
+      <GrayToWhite grayBg="#f9fafb" />
       <EbookGuideContent />
       <EbookForm handleGetEbook={handleGetEbook} />
 
+      <WhiteToGray grayBg="#f8fafc" />
       <Testimonials />
 
+      <LightToDark lightBg="#F8FAFC" darkBg="#03091f" />
       <section className="py-16 md:py-24 bg-brand-blue-gradient text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div 

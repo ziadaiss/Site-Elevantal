@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import BlogHero from '@/components/blog/BlogHero';
 import BlogGrid from '@/components/blog/BlogGrid';
 import useScrollReveal from '@/hooks/useScrollReveal';
+import { DarkToLight } from '@/components/common/WaveSeparator';
 
 const BlogPage = ({ handleNotImplemented }) => {
   useEffect(() => {
@@ -16,10 +17,9 @@ const BlogPage = ({ handleNotImplemented }) => {
         <title>Newsletter - Elevantal</title>
         <meta name="description" content="Conseils, astuces et actualités sur le recrutement et l'expérience candidat." />
       </Helmet>
-      <div className="bg-white">
-        <BlogHero /> {/* Removed handleNotImplemented prop since button now has direct action */}
-        <BlogGrid handleNotImplemented={handleNotImplemented} />
-      </div>
+      <BlogHero />
+      <DarkToLight darkBg="#132873" lightBg="#F9FAFB" />
+      <BlogGrid handleNotImplemented={handleNotImplemented} />
     </>
   );
 };

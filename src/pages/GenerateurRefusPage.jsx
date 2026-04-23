@@ -214,6 +214,46 @@ const GenerateurRefusPage = () => {
         .gr-stat-num{font-size:36px;font-weight:800;letter-spacing:-.02em;margin-bottom:4px;background:var(--gr-gradient-accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
         .gr-stat-label{font-size:14px;color:#666;font-weight:400}
 
+        /* AVANT/APRÈS */
+        .gr-avant-apres{padding:100px 0;background:#fff;position:relative}
+        .gr-avant-apres .gr-container{max-width:1200px;margin:0 auto;padding:0 32px}
+        .gr-avant-apres h2{font-size:clamp(26px,4vw,42px);font-weight:800;line-height:1.15;letter-spacing:-.02em;text-align:center;margin-bottom:12px;color:#0B1437}
+        .gr-avant-apres h2 .gr-grad{background:var(--gr-gradient-accent);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .gr-aa-sub{text-align:center;font-size:16px;font-weight:400;color:#6B7280;margin-bottom:56px;max-width:600px;margin-left:auto;margin-right:auto}
+        .gr-aa-grid{display:grid;grid-template-columns:1fr 56px 1fr;gap:0;align-items:stretch}
+        .gr-aa-card{border-radius:20px;padding:32px 28px;position:relative;overflow:hidden}
+        .gr-aa-avant{background:#FEF2F2;border:1px solid #FECACA}
+        .gr-aa-avant .gr-aa-tag{background:#FEE2E2;color:#DC2626}
+        .gr-aa-apres{background:#EFF6FF;border:1px solid #BFDBFE}
+        .gr-aa-apres .gr-aa-tag{background:#DBEAFE;color:#2563EB}
+        .gr-aa-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+        .gr-aa-mail{background:#fff;border:1px solid #E5E7EB;border-radius:14px;padding:24px 22px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+        .gr-aa-mail-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid #F3F4F6}
+        .gr-aa-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+        .gr-aa-avant .gr-aa-avatar{background:#FEE2E2;color:#DC2626}
+        .gr-aa-apres .gr-aa-avatar{background:#DBEAFE;color:#2563EB}
+        .gr-aa-mail-meta{flex:1}
+        .gr-aa-mail-from{font-size:13px;font-weight:600;color:#1F2937}
+        .gr-aa-mail-to{font-size:11px;color:#9CA3AF;font-weight:400}
+        .gr-aa-mail-subject{font-size:14px;font-weight:600;color:#1F2937;margin-bottom:14px}
+        .gr-aa-mail-body{font-size:13px;color:#6B7280;line-height:1.8;font-weight:400}
+        .gr-aa-mail-body p+p{margin-top:10px}
+        .gr-aa-impact{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+        .gr-aa-impact-item{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:500;padding:8px 14px;border-radius:10px}
+        .gr-aa-avant .gr-aa-impact-item{background:#FEE2E2;color:#DC2626}
+        .gr-aa-apres .gr-aa-impact-item{background:#DBEAFE;color:#2563EB}
+        .gr-aa-impact-icon{width:20px;height:20px;min-width:20px;display:flex;align-items:center;justify-content:center}
+        .gr-aa-arrow{display:flex;align-items:center;justify-content:center;padding:0;position:relative}
+        .gr-aa-arrow-inner{width:56px;height:56px;border-radius:50%;background:var(--gr-gradient-accent);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(82,100,228,.25);position:relative;z-index:2}
+        .gr-aa-arrow svg{width:24px;height:24px;color:#fff}
+        .gr-aa-arrow::before{content:'';position:absolute;top:50%;left:0;right:0;height:2px;background:linear-gradient(90deg,#FECACA,rgba(82,100,228,.3),#BFDBFE);z-index:1}
+        .gr-aa-fair-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+        .gr-aa-fair-tag{padding:4px 12px;border-radius:100px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border:1px solid}
+        .gr-aa-ft-f{background:rgba(82,100,228,.08);border-color:rgba(82,100,228,.2);color:#5264e4}
+        .gr-aa-ft-a{background:rgba(66,126,222,.08);border-color:rgba(66,126,222,.2);color:#427ede}
+        .gr-aa-ft-i{background:rgba(53,152,217,.08);border-color:rgba(53,152,217,.2);color:#3598d9}
+        .gr-aa-ft-r{background:rgba(82,100,228,.08);border-color:rgba(82,100,228,.2);color:#5264e4}
+
         /* METHODE FAIR */
         .gr-fair{padding:100px 0;text-align:center}
         .gr-fair h2{font-size:clamp(26px,3.8vw,40px);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:12px}
@@ -268,6 +308,9 @@ const GenerateurRefusPage = () => {
           .gr-phone{width:280px}
           .gr-benefits .gr-container{grid-template-columns:1fr;gap:48px}
           .gr-fair-grid{grid-template-columns:repeat(2,1fr)}
+          .gr-aa-grid{grid-template-columns:1fr;gap:24px}
+          .gr-aa-arrow{padding:12px 0;transform:rotate(90deg)}
+          .gr-aa-arrow::before{display:none}
         }
         @media(max-width:600px){
           .gr-hero{padding:80px 0 60px}
@@ -288,12 +331,12 @@ const GenerateurRefusPage = () => {
           <section className="gr-hero">
             <div className="gr-container">
               <div className="gr-hero-left">
-                <div className="gr-overline gr-reveal">Agent IA feedback post-entretien</div>
+                <div className="gr-overline gr-reveal">Générateur IA feedback post-entretien</div>
                 <h1 className="gr-reveal gr-reveal-d1">Générez un mail de refus candidat personnalisé en 10 secondes !</h1>
                 <p className="gr-sub gr-reveal gr-reveal-d2">
                   Si vos candidats restent sans réponse après un entretien, que vous n'avez pas le temps de rédiger des <strong>feedbacks post-entretien</strong> individuels, ou que le <strong>ghosting candidat</strong> nuit à votre <strong>marque employeur</strong>...
                 </p>
-                <p className="gr-hero-intro gr-reveal gr-reveal-d3">Accédez à votre agent IA immédiatement pour :</p>
+                <p className="gr-hero-intro gr-reveal gr-reveal-d3">Accédez à votre générateur IA immédiatement pour :</p>
                 <ul className="gr-hero-checks">
                   <li className="gr-reveal gr-reveal-d3">
                     <span className="gr-hc-icon">
@@ -363,7 +406,7 @@ const GenerateurRefusPage = () => {
                   </li>
                   <li className="gr-reveal gr-reveal-d2">
                     <span className="gr-check-dot"><svg viewBox="0 0 14 14" fill="none"><path d="M2.5 7.5L5.5 10.5L11.5 4" stroke="#3598d9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                    Valoriser votre marque employeur à chaque interaction — même les refus
+                    Valoriser votre marque employeur à chaque interaction, même les refus
                   </li>
                   <li className="gr-reveal gr-reveal-d3">
                     <span className="gr-check-dot"><svg viewBox="0 0 14 14" fill="none"><path d="M2.5 7.5L5.5 10.5L11.5 4" stroke="#3598d9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
@@ -371,7 +414,7 @@ const GenerateurRefusPage = () => {
                   </li>
                   <li className="gr-reveal gr-reveal-d4">
                     <span className="gr-check-dot"><svg viewBox="0 0 14 14" fill="none"><path d="M2.5 7.5L5.5 10.5L11.5 4" stroke="#3598d9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
-                    Appliquer la méthode F.A.I.R. automatiquement — sans formation préalable
+                    Appliquer la méthode F.A.I.R. automatiquement, sans formation préalable
                   </li>
                 </ul>
               </div>
@@ -402,7 +445,7 @@ const GenerateurRefusPage = () => {
                 <div className="gr-fair-card gr-reveal">
                   <div className="gr-fair-letter">F</div>
                   <h4>Feedback</h4>
-                  <p>Un retour constructif et spécifique — jamais de phrase générique type « nous avons retenu un autre profil ».</p>
+                  <p>Un retour constructif et spécifique, jamais de phrase générique type « nous avons retenu un autre profil ».</p>
                 </div>
                 <div className="gr-fair-card gr-reveal gr-reveal-d1">
                   <div className="gr-fair-letter">A</div>
@@ -419,6 +462,107 @@ const GenerateurRefusPage = () => {
                   <h4>Réouverture</h4>
                   <p>Laisser la porte ouverte : encourager à postuler à nouveau, rester en contact, ou recommander ailleurs.</p>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          {/* AVANT / APRÈS */}
+          <section className="gr-avant-apres">
+            <div className="gr-container">
+              <h2 className="gr-reveal">Avant / <span className="gr-grad">Après</span></h2>
+              <p className="gr-aa-sub gr-reveal gr-reveal-d1">Le même candidat, le même refus, mais une expérience radicalement différente.</p>
+
+              <div className="gr-aa-grid">
+
+                <div className="gr-aa-card gr-aa-avant gr-reveal">
+                  <div className="gr-aa-tag">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" transform="rotate(45 7 7)"/></svg>
+                    Avant
+                  </div>
+                  <div className="gr-aa-mail">
+                    <div className="gr-aa-mail-header">
+                      <div className="gr-aa-avatar">RH</div>
+                      <div className="gr-aa-mail-meta">
+                        <div className="gr-aa-mail-from">recrutement@entreprise.fr</div>
+                        <div className="gr-aa-mail-to">À : marie.dupont@gmail.com</div>
+                      </div>
+                    </div>
+                    <div className="gr-aa-mail-subject">Objet : Votre candidature</div>
+                    <div className="gr-aa-mail-body">
+                      <p>Bonjour,</p>
+                      <p>Suite à votre entretien, nous avons le regret de vous informer que nous avons retenu un autre profil plus en adéquation avec nos besoins.</p>
+                      <p>Nous vous souhaitons bonne continuation dans vos recherches.</p>
+                      <p>Cordialement,<br/>Le service RH</p>
+                    </div>
+                  </div>
+                  <div className="gr-aa-impact">
+                    <div className="gr-aa-impact-item">
+                      <div className="gr-aa-impact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" transform="rotate(45 7 7)"/></svg></div>
+                      Aucun feedback concret
+                    </div>
+                    <div className="gr-aa-impact-item">
+                      <div className="gr-aa-impact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" transform="rotate(45 7 7)"/></svg></div>
+                      Candidat frustré → avis négatif Glassdoor
+                    </div>
+                    <div className="gr-aa-impact-item">
+                      <div className="gr-aa-impact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" transform="rotate(45 7 7)"/></svg></div>
+                      Marque employeur dégradée
+                    </div>
+                  </div>
+                </div>
+
+                <div className="gr-aa-arrow gr-reveal gr-reveal-d1">
+                  <div className="gr-aa-arrow-inner">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </div>
+                </div>
+
+                <div className="gr-aa-card gr-aa-apres gr-reveal gr-reveal-d2">
+                  <div className="gr-aa-tag">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    Après — méthode F.A.I.R.
+                  </div>
+                  <div className="gr-aa-mail">
+                    <div className="gr-aa-mail-header">
+                      <div className="gr-aa-avatar">ZA</div>
+                      <div className="gr-aa-mail-meta">
+                        <div className="gr-aa-mail-from">recrutement@entreprise.fr</div>
+                        <div className="gr-aa-mail-to">À : marie.dupont@gmail.com</div>
+                      </div>
+                    </div>
+                    <div className="gr-aa-mail-subject">Objet : Marie, un retour sur notre échange</div>
+                    <div className="gr-aa-mail-body">
+                      <p>Chère Madame Marie,</p>
+                      <p>Nous vous remercions chaleureusement de l'intérêt que vous avez porté à notre entreprise et à votre candidature au poste de Chargé de recrutement. Nous avons également beaucoup apprécié les échanges que nous avons eus avec vous et le temps que vous nous avez accordé lors de notre processus de recrutement.</p>
+                      <p>Nous avons étudié avec attention l'ensemble des candidatures et, après mûre réflexion, nous avons pris notre décision finale.</p>
+                      <p>Bien que votre profil et vos compétences aient retenu toute notre attention, nous avons finalement privilégié un profil avec plus d'expérience en leadership d'équipe. Ce critère s'est avéré particulièrement déterminant dans notre contexte actuel de croissance rapide, où la capacité à encadrer et à développer une équipe est essentielle pour ce poste.</p>
+                      <p>Nous tenons à saluer la qualité de votre candidature et l'enthousiasme dont vous avez fait preuve. Nous comprenons que cette nouvelle puisse être décevante, et nous tenons à vous assurer que notre décision ne remet absolument pas en question vos compétences ni votre potentiel.</p>
+                      <p>Nous vous souhaitons pleine réussite dans vos futures démarches professionnelles et espérons que vous trouverez un poste à la hauteur de vos aspirations.</p>
+                      <p>Cordialement</p>
+                    </div>
+                  </div>
+                  <div className="gr-aa-fair-tags">
+                    <span className="gr-aa-fair-tag gr-aa-ft-f">F · Feedback</span>
+                    <span className="gr-aa-fair-tag gr-aa-ft-a">A · Appréciation</span>
+                    <span className="gr-aa-fair-tag gr-aa-ft-i">I · Individualisation</span>
+                    <span className="gr-aa-fair-tag gr-aa-ft-r">R · Réouverture</span>
+                  </div>
+                  <div className="gr-aa-impact">
+                    <div className="gr-aa-impact-item">
+                      <div className="gr-aa-impact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+                      Candidat valorisé et respecté
+                    </div>
+                    <div className="gr-aa-impact-item">
+                      <div className="gr-aa-impact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+                      Recommande l'entreprise à son réseau
+                    </div>
+                    <div className="gr-aa-impact-item">
+                      <div className="gr-aa-impact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+                      Marque employeur renforcée
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </section>
@@ -448,7 +592,7 @@ const GenerateurRefusPage = () => {
                     setFormSending(false);
                     setFormSubmitted(true);
                   }}>
-                    <h2>Accédez à votre <span className="gr-grad">agent IA</span> gratuitement</h2>
+                    <h2>Accédez à votre <span className="gr-grad">générateur IA</span> gratuitement</h2>
                     <p>Recevez l'accès instantanément. Commencez à envoyer des feedbacks post-entretien personnalisés dès aujourd'hui.</p>
                     <div className="gr-field">
                       <label>Prénom <span className="gr-req">*</span></label>
@@ -463,7 +607,7 @@ const GenerateurRefusPage = () => {
                     <button className="gr-form-submit" type="submit" disabled={formSending}>
                       {formSending ? 'Envoi en cours...' : 'Je télécharge le générateur*'}
                     </button>
-                    <p className="gr-form-footnote">*Vous recevrez un lien par mail pour accéder à l'agent IA de recrutement sans avoir à vous reconnecter.</p>
+                    <p className="gr-form-footnote">*Vous recevrez un lien par mail pour accéder à le générateur IA de recrutement sans avoir à vous reconnecter.</p>
                   </form>
                 )}
               </div>

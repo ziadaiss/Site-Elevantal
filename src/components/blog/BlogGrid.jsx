@@ -5,6 +5,17 @@ import { ArrowRight, Calendar, Clock } from 'lucide-react';
 
 const articles = [
   {
+    id: 3,
+    title: "#3 - Recruter et attirer : strat\u00e9gies gagnantes pour PME/ETI",
+    category: "Les incontournables",
+    categoryColor: "text-blue-600",
+    imageUrl: "/images/newsletter-3-cover.png.png",
+    description: "Dans un march\u00e9 o\u00f9 la p\u00e9nurie de talents est omnipr\u00e9sente, il est essentiel pour les PME d\u2019optimiser leur processus de recrutement afin d\u2019attirer et de retenir les meilleurs profils...",
+    date: "16 Avril, 2026",
+    readingTime: "5 min",
+    link: "/blog/recruter-attirer-strategies-pme-eti",
+  },
+  {
     id: 2,
     title: "#2 - Le vrai coût d'un refus impersonnel 😬",
     category: "Les incontournables",
@@ -13,7 +24,7 @@ const articles = [
     description: "Chaque point de contact avec un candidat est un point de bascule : pour l’image, la réputation et l’engagement. Et parmi ces points de contact, il y en a un que beaucoup sous-estime encore trop : le message de refus.",
     date: "07 Août, 2025",
     readingTime: "5 min",
-    link: "/blog/experience-candidat-incontournable-2025",
+    link: "/blog/le-vrai-cout-dun-refus-impersonnel",
   },
   {
     id: 1,

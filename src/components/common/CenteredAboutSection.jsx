@@ -32,7 +32,7 @@ const CenteredAboutSection = () => {
                   Une approche qui respecte votre authenticité
                 </h3>
                 <p className="text-base text-gray-200/95 leading-relaxed">
-                  Nous vous aidons à structurer vos process tout en gardant votre culture start-up. Fluide, engageant, humain.
+                  Nous vous aidons à structurer vos process tout en gardant votre culture PME. Fluide, engageant, humain.
                 </p>
               </div>
 
@@ -47,7 +47,7 @@ const CenteredAboutSection = () => {
             </div>
 
             <p className="mt-12 text-lg md:text-xl font-bold">
-              Parce que les meilleurs talents ne fuient pas les start-ups exigeantes.
+              Parce que les meilleurs talents ne fuient pas les PME exigeantes.
               <br />
               Ils fuient celles qui les ignorent.
             </p>

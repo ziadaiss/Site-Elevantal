@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: "+2", label: "Start-ups accompagnées" },
+  { value: "+2", label: "PME accompagnées" },
   { value: "+1 300", label: "Abonnés LinkedIn engagés" },
   { value: "5/5 ⭐", label: "Avis clients vérifiés" },
 ];

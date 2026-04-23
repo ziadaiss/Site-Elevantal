@@ -27,7 +27,7 @@ const CTA = () => {
             <p className="text-lg md:text-xl text-gray-200 mb-8">Pour recevoir nos conseils deux jeudis par mois.</p>
             
             <div className="flex justify-center">
-              <Button onClick={handleRedirect} className="bg-brand-blue-gradient text-white px-5 py-5 rounded-full font-semibold text-base transition-all duration-300 transform hover:scale-105">
+              <Button onClick={handleRedirect} className="bg-brand-blue-gradient text-white px-5 py-5 rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105">
                 S'inscire
               </Button>
             </div>

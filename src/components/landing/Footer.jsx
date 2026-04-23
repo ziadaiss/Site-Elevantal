@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Linkedin } from 'lucide-react';
+import { Linkedin, Youtube } from 'lucide-react';
 const FooterLink = ({
   to,
   children,
@@ -28,7 +28,7 @@ const Footer = ({
             <p className="text-sm mb-2">
               <strong>Elevantal</strong>
             </p>
-            <p className="text-sm leading-relaxed max-w-sm">L'agence qui élève l’expérience candidat pour les RH et recruteurs de start-ups d’aujourd’hui.</p>
+            <p className="text-sm leading-relaxed max-w-sm">L'agence qui élève l’expérience candidat pour les RH et recruteurs de PME d’aujourd’hui.</p>
             <p className="text-sm leading-relaxed mt-2 max-w-sm">Notre mission ? Les aider à (re)créer une relation de confiance et claire avec leurs candidats et futurs talents, grâce à une expérience candidat mémorable qui transcende leurs marque employeur.</p>
           </div>
 
@@ -53,9 +53,14 @@ const Footer = ({
 
             <div className="flex flex-col items-center md:items-start">
               <p className="font-bold mb-4">SUIVEZ-NOUS</p>
-              <a href="https://www.linkedin.com/company/elevantal" target="_blank" rel="noopener noreferrer" className="inline-block p-2 rounded-full bg-brand-dark/10 hover:bg-brand-purple/20 transition-colors">
-                <Linkedin className="w-6 h-6 text-brand-dark" />
-              </a>
+              <div className="flex gap-3">
+                <a href="https://www.linkedin.com/company/elevantal" target="_blank" rel="noopener noreferrer" className="inline-block p-2 rounded-full bg-brand-dark/10 hover:bg-brand-purple/20 transition-colors">
+                  <Linkedin className="w-6 h-6 text-brand-dark" />
+                </a>
+                <a href="https://youtube.com/@elevantal?si=RKD3kPtJPrOrZ8aS" target="_blank" rel="noopener noreferrer" className="inline-block p-2 rounded-full bg-brand-dark/10 hover:bg-brand-purple/20 transition-colors">
+                  <Youtube className="w-6 h-6 text-brand-dark" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

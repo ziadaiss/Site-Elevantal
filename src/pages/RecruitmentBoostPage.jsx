@@ -9,6 +9,7 @@ import Testimonials from '@/components/landing/Testimonials';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import useScrollReveal from '@/hooks/useScrollReveal';
+import { DarkToLight, LightToDark, WhiteToGray, GrayToWhite } from '@/components/common/WaveSeparator';
 
 
 const RecruitmentBoostPage = ({ handleNotImplemented }) => {
@@ -48,12 +49,17 @@ const RecruitmentBoostPage = ({ handleNotImplemented }) => {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      <RecruitmentBoostHero handleNotImplemented={handleNotImplemented} />
-      <WhyImproveExperience handleNotImplemented={handleNotImplemented} />
+      <RecruitmentBoostHero />
+      <DarkToLight darkBg="#132873" lightBg="#F3F4F6" />
+      <WhyImproveExperience />
+      <GrayToWhite grayBg="#F3F4F6" />
       <ForYouSection />
 
+      <LightToDark lightBg="#ffffff" darkBg="#040a23" />
       <AccompagnementTimeline />
+      <DarkToLight darkBg="#132873" lightBg="#ffffff" />
       <AboutMe />
+      <WhiteToGray grayBg="#f8fafc" />
       <Testimonials />
       <section className="py-16 md:py-24 bg-gray-50">
         <motion.div 

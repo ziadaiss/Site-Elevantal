@@ -3,24 +3,24 @@ import { motion } from 'framer-motion';
 
 const forYouCards = [
   {
-    emoji: '🧠',
-    title: 'Vous souhaitez comprendre, pas simplement exécuter',
-    text: 'Vous ne recherchez pas un prestataire qui enchaîne des livrables sans explication. Vous souhaitez comprendre les enjeux RH, la logique de chaque action, et avancer avec clarté. Nous travaillons en transparence, avec pédagogie et sens.',
+    emoji: "\uD83C\uDF93",
+    title: "Vous g\u00e9rez le recrutement seul\u00b7e et personne ne vous a jamais form\u00e9 \u00e0 l\u2019exp\u00e9rience candidat",
+    text: "Vous \u00eates RRH ou DRH en PME, vous avez appris sur le tas. Vous savez que votre parcours candidat a des failles mais vous n\u2019avez jamais eu de m\u00e9thode pour les corriger.",
   },
   {
-    emoji: '🔎',
-    title: 'Vous avez besoin d’un cadre clair et structurant',
-    text: 'Vous avez besoin d’un plan d’action pragmatique, avec des priorités concrètes. Nous vous fournissons une méthode précise, adaptée à vos ressources, à votre culture, et à vos objectifs.',
+    emoji: "\uD83E\uDDF0",
+    title: "Vous voulez un plan d\u2019action, pas une formation th\u00e9orique de plus",
+    text: "Vous n\u2019avez pas besoin d\u2019un \u00e9ni\u00e8me diaporama sur la marque employeur. Vous voulez repartir avec des outils concrets : mails types, grille d\u2019audit, tableau de bord, processus clair.",
   },
   {
-    emoji: '⏳',
-    title: 'Vous manquez de temps mais avoir un œil sur le process',
-    text: 'Vous ne voulez pas tout déléguer sans maîtrise. Vous souhaitez être guidé, tout en restant acteur de l’expérience candidat dans votre entreprise. Notre accompagnement vous permet de rester aligné tout au long du processus.',
+    emoji: "\u231B",
+    title: "Vous n\u2019avez pas le temps mais vous voulez garder la main",
+    text: "14 postes ouverts, des urgences chaque jour. Vous ne voulez pas tout d\u00e9l\u00e9guer, vous voulez \u00eatre guid\u00e9 pour construire un processus de recrutement qui tient sans vous.",
   },
   {
-    emoji: '🎯',
-    title: 'Vous attendez des résultats, pas des promesses vagues',
-    text: 'Vous avez déjà vu passer trop d’approches génériques ou de concepts creux. Ici, chaque recommandation est pensée pour vos propres enjeux. Notre promesse : un accompagnement honnête, orienté résultats, et opérationnel dès le premier mois.',
+    emoji: "\uD83D\uDCCA",
+    title: "Vous voulez pouvoir prouver vos r\u00e9sultats \u00e0 votre direction",
+    text: "Quand on vous demande des chiffres, vous improvisez. Vous voulez mesurer vos d\u00e9lais de recrutement, votre taux de r\u00e9ponse candidat et montrer l\u2019impact concret de vos actions.",
   },
 ];
 

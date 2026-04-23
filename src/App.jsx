@@ -13,12 +13,15 @@ import AProposPage from '@/pages/AProposPage';
 import BlogPage from '@/pages/BlogPage';
 import RecruitmentBoostPage from '@/pages/RecruitmentBoostPage';
 import Article1Page from '@/pages/articles/Article1Page';
+import Article2Page from '@/pages/articles/Article2Page';
+import Article3Page from '@/pages/articles/Article3Page';
 import MentionsLegalesPage from '@/pages/MentionsLegalesPage';
 import PolitiqueConfidentialitePage from '@/pages/PolitiqueConfidentialitePage';
 import CGVPage from '@/pages/CGVPage';
 import EbookPage from '@/pages/EbookPage';
 import QuiSommesNousPage from '@/pages/QuiSommesNousPage';
 import GenerateurRefusPage from '@/pages/GenerateurRefusPage';
+import PromptsIAPage from '@/pages/PromptsIAPage';
 
 function App() {
   const { toast } = useToast();
@@ -50,12 +53,15 @@ function App() {
             <Route path="/formation-rRevelation" element={<FormationPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/recruitment-experience-boost" element={<RecruitmentBoostPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/generateur-refus" element={<GenerateurRefusPage />} />
+            <Route path="/10-prompts-ia" element={<PromptsIAPage />} />
             <Route path="/agence" element={<AgencePage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/avis-clients" element={<AvisClientsPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/a-propos" element={<AProposPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/qui-sommes-nous" element={<QuiSommesNousPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/newsletter" element={<BlogPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/blog/experience-candidat-incontournable-2025" element={<Article1Page />} />
+            <Route path="/blog/le-vrai-cout-dun-refus-impersonnel" element={<Article2Page />} />
+            <Route path="/blog/recruter-attirer-strategies-pme-eti" element={<Article3Page />} />
             <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
             <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialitePage />} />
             <Route path="/cgv" element={<CGVPage />} />

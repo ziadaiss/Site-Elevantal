@@ -6,7 +6,7 @@ const features = [
   {
     icon: <ShieldCheck className="w-8 h-8 text-white" />,
     title: "Nous comprenons vos contraintes",
-    description: "On sait que vous n'avez ni le temps, ni le budget d'un grand groupe. Nos solutions sont pensées pour des start-ups qui doivent recruter vite, bien, et sans exploser leur budget.",
+    description: "On sait que vous n'avez ni le temps, ni le budget d'un grand groupe. Nos solutions sont pensées pour des PME qui doivent recruter vite, bien, et sans exploser leur budget.",
   },
   {
     icon: <Clock className="w-8 h-8 text-white" />,

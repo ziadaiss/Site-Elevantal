@@ -27,7 +27,7 @@ const FormationFaq = () => {
     question: "Et si je ne suis pas satisfait(e) ?",
     answer: "Un point d’étape est prévu à mi-parcours pour recueillir vos retours, ajuster les contenus si nécessaire, et garantir que l’accompagnement réponde pleinement à vos attentes. La satisfaction de nos clients est notre priorité. Ainsi, après les 6 semaines de suivi, vous aurez accès à un lien pour convenir d'autres rendez-vous afin de répondre à toutes vos questions."
   }];
-  return <section id="faq-formation" className="reveal py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-100">
+  return <section id="faq-formation" className="reveal py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-4xl mx-auto">
         <motion.div initial={{
         opacity: 0,

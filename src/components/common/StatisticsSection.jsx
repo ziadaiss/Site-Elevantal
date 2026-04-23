@@ -1,21 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 const frustrationCards = [{
-  emoji: '😤',
-  title: 'Candidats qui disparaissent',
-  text: 'Vos talents ne répondent plus du jour au lendemain ? C’est peut-être votre expérience candidat qui les fait fuir.'
+  emoji: "\u{1F47B}",
+  title: "Vos candidats disparaissent sans pr\u00e9venir",
+  text: "Vous passez 3 entretiens avec un candidat, plus de nouvelles. Aucun retour, aucune explication. Et vous ne savez m\u00eame pas \u00e0 quel moment vous l\u2019avez perdu."
 }, {
-  emoji: '🌀',
-  title: 'Process trop flous',
-  text: "Trop d'étapes, pas assez de clarté : vos recrutements manquent d'engagement ? On vous aide à tout fluidifier."
+  emoji: "\u{1F504}",
+  title: "Vous recrutez sans vrai process",
+  text: "Chaque recrutement repart de z\u00e9ro. Pas de parcours clair pour le candidat, pas de mails pr\u00e9vus, pas de suivi. Vous improvisez \u00e0 chaque poste."
 }, {
-  emoji: '🕒',
-  title: 'Perte de temps à répéter',
-  text: 'Relances, répétitions, mails... Vous refaites sans cesse la même chose ? Standardisez sans déshumaniser.'
+  emoji: "\u{1F525}",
+  title: "Vous g\u00e9rez le recrutement en mode urgence",
+  text: "14 postes ouverts, la direction qui pousse, des candidats \u00e0 relancer. Vous courrez partout mais vous ne construisez rien de durable."
 }, {
-  emoji: '🙄',
-  title: 'Image RH peu engageante',
-  text: 'Si vos messages LinkedIn ou entretiens ne laissent pas de traces, c’est le moment d’activer votre marque employeur.'
+  emoji: "\u{1F6AA}",
+  title: "Les candidats ne vous choisissent pas",
+  text: "Z\u00e9ro avis en ligne, un site carri\u00e8re vide, des offres qui ressemblent \u00e0 toutes les autres. Les bons profils comparent et partent chez le concurrent."
 }];
 const FrustrationCard = ({
   emoji,
@@ -53,7 +53,7 @@ const StatisticsSection = () => {
         amount: 0.5
       }} transition={{
         duration: 0.6
-      }} className="text-3xl md:text-5xl font-bold text-brand-dark text-center mb-12">Votre processus de recrutement laisse les candidats dans le silence👇</motion.h2>
+      }} className="text-3xl md:text-5xl font-bold text-brand-dark text-center mb-12">Votre processus de recrutement laisse les candidats dans le silence&#x1F447;</motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {frustrationCards.map((card, index) => <FrustrationCard key={index} {...card} index={index} />)}
         </div>

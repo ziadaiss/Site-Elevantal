@@ -27,16 +27,29 @@ const Article1Page = () => {
         <meta name="description" content="Découvrez pourquoi l'expérience candidat est devenue un pilier stratégique pour attirer et retenir les talents." />
       </Helmet>
 
-      <header className="bg-brand-blue-gradient text-white py-20 md:py-28 reveal">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1 
+      <header className="relative text-white py-20 md:py-28 reveal overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/c79cbed83de57836cf956e14f7bff3dc.jpg" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
+        </div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-5xl font-extrabold tracking-tight"
           >
-            #1 – L’expérience candidat, un incontournable en 2025 ? 🤔✨
-          </motion.h1>
+            <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6">Les incontournables</span>
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+              #1 – L’expérience candidat, un incontournable en 2025 ?
+            </h1>
+            <div className="flex items-center justify-center gap-4 mt-6 text-sm text-white/70">
+              <span>Ziad Aissaoua</span>
+              <span>•</span>
+              <span>31 Juil, 2025</span>
+              <span>•</span>
+              <span>5 min de lecture</span>
+            </div>
+          </motion.div>
         </div>
       </header>
 
@@ -157,7 +170,7 @@ const Article1Page = () => {
             <p className="mt-8">À très vite</p>
 
             <div className="mt-12 text-center">
-              <Button asChild size="lg" className="bg-brand-purple text-white hover:bg-brand-purple/90 rounded-full font-bold text-lg px-8 py-6 transition-transform transform hover:scale-105">
+              <Button asChild size="lg" className="bg-brand-purple text-white hover:bg-brand-purple/90 rounded-lg font-bold text-lg px-8 py-6 transition-transform transform hover:scale-105">
                 <Link to="/blog">Retour au blog</Link>
               </Button>
             </div>

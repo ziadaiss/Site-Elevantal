@@ -95,6 +95,9 @@ const Navbar = ({
                         <ListItem href="/tableur-experience-candidat" title="KPIs expérience candidat">
                           Obtenez la performance de vos recrutements
                         </ListItem>
+                        <ListItem href="/10-prompts-ia" title="10 Prompts IA">
+                          10 prompts IA prêts à l'emploi pour recruteurs
+                        </ListItem>
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -115,7 +118,7 @@ const Navbar = ({
                 </NavigationMenuList>
               </NavigationMenu>
 
-              <Button asChild className="bg-brand-blue-gradient text-white px-8 py-4 rounded-full font-semibold text-base transition-all duration-300 transform hover:scale-105 ml-2" // Applied styling to match the reference pill shape
+              <Button asChild className="bg-brand-blue-gradient text-white px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 transform hover:scale-105 ml-2"
             >
                 <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                   Prenez rendez-vous
@@ -159,13 +162,16 @@ const Navbar = ({
             <Link to="/tableur-experience-candidat" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">KPIs expérience candidat</Link>
           </li>
           <li>
+            <Link to="/10-prompts-ia" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">10 Prompts IA</Link>
+          </li>
+          <li>
             <Link to="/qui-sommes-nous" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold">Qui sommes-nous ?</Link>
           </li>
           <li>
             <Link to="/newsletter" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold">Newsletter</Link>
           </li>
           <li>
-            <Button asChild className="w-full mt-4 bg-brand-blue-gradient text-white px-8 py-4 rounded-full font-semibold text-base" // Applied styling to match the reference pill shape
+            <Button asChild className="w-full mt-4 bg-brand-blue-gradient text-white px-8 py-4 rounded-lg font-semibold text-base"
           >
               <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className="block w-full text-center">
                 Prenez rendez-vous

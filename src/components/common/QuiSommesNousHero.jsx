@@ -34,10 +34,10 @@ const QuiSommesNousHero = ({
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-lg mx-auto lg:mx-0">À propos d'Elevantal</h1>
             
             <p className="mt-6 text-lg text-blue-100/90 max-w-xl mx-auto lg:mx-0">
-              Elevantal est une agence spécialisée en expérience candidat et marque employeur, créée pour répondre à un constat simple : 60% des candidats ghostent les start-ups pendant leur processus de recrutement.
+              Elevantal est une agence spécialisée en expérience candidat et marque employeur, créée pour répondre à un constat simple : 60% des candidats ghostent les PME pendant leur processus de recrutement.
               <br />
               <br />
-              Notre mission : Faire de l'expérience candidat un avantage concurrentiel pour les start-ups en croissance. Nous aidons les équipes RH et recrutement à transformer leur parcours candidat en machine d'engagement, de conversion, et de fidélisation. Notre approche ? Zéro théorie. Que des méthodes concrètes, des outils prêts à l'emploi, et des résultats mesurables dès les premières semaines.
+              Notre mission : Faire de l'expérience candidat un avantage concurrentiel pour les PME en croissance. Nous aidons les équipes RH et recrutement à transformer leur parcours candidat en machine d'engagement, de conversion, et de fidélisation. Notre approche ? Zéro théorie. Que des méthodes concrètes, des outils prêts à l'emploi, et des résultats mesurables dès les premières semaines.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

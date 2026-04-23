@@ -63,7 +63,7 @@ const AboutMe = () => {
 
               {/* Punchline */}
               <p className="mt-12 text-lg md:text-xl font-bold">
-                Parce que les meilleurs talents ne fuient pas les start-ups exigeantes.
+                Parce que les meilleurs talents ne fuient pas les PME exigeantes.
                 <br />
                 Ils fuient celles qui les ignorent.
               </p>
