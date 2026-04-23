@@ -24,9 +24,10 @@ const QuiSommesNousPage = ({ handleNotImplemented }) => {
 
       <QuiSommesNousHero handleNotImplemented={handleNotImplemented} />
 
-      {/* FloatingStatsCard is self-contained with responsive grid layout (stack on mobile, row on desktop) */}
-      <FloatingStatsCard />
-      <DarkToLight darkBg="#0a1642" lightBg="#F9FAFB" />
+      <div style={{ background: '#152d7f' }}>
+        <FloatingStatsCard />
+        <DarkToLight darkBg="#152d7f" lightBg="#F9FAFB" />
+      </div>
 
       <RoiSection handleNotImplemented={handleNotImplemented} />
 
