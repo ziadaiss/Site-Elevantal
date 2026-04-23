@@ -16,9 +16,10 @@ const HomePage = ({ handleNotImplemented }) => {
   return (
     <>
       <HeroCarousel />
-      {/* FloatingStatsCard has its own animation + negative margin overlap — no wrapper */}
-      <FloatingStatsCard />
-      <DarkToLight darkBg="#0a1642" lightBg="#F3F4F6" />
+      <div style={{ background: 'linear-gradient(135deg,#020617 0%,#0a1642 40%,#1e40af 100%)' }}>
+        <FloatingStatsCard />
+        <DarkToLight darkBg="#1e40af" lightBg="#F3F4F6" />
+      </div>
       <StatisticsSection />
       <Frustrations />
       <GrayToWhite grayBg="#f9fafb" />

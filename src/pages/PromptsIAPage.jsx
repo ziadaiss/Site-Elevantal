@@ -112,7 +112,7 @@ const PromptsIAPage = () => {
       </section>
 
       {/* VAGUE : sombre → blanc */}
-      <div className="tp-wave" style={{ background: 'transparent' }}>
+      <div className="tp-wave" style={{ background: '#132873' }}>
         <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
           <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 L1440,140 L0,140 Z" fill="rgba(82,100,228,.35)" />
           <path d="M0,65 C300,100 600,25 900,65 C1100,90 1300,35 1440,65 L1440,140 L0,140 Z" fill="rgba(66,126,222,.3)" />
@@ -209,7 +209,7 @@ const PromptsIAPage = () => {
       </section>
 
       {/* VAGUE : sombre → blanc */}
-      <div className="tp-wave" style={{ background: 'transparent' }}>
+      <div className="tp-wave" style={{ background: '#132873' }}>
         <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
           <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 L1440,140 L0,140 Z" fill="rgba(82,100,228,.35)" />
           <path d="M0,65 C300,100 600,25 900,65 C1100,90 1300,35 1440,65 L1440,140 L0,140 Z" fill="rgba(66,126,222,.3)" />
