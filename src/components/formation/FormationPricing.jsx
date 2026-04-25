@@ -115,7 +115,7 @@ const FormationPricing = () => {
                 <div className="tc-price">
                   <span className="tc-amount">1 590</span>
                   <span className="tc-currency">{"€"}</span>
-                  <span className="tc-per">par personne</span>
+                  <span className="tc-per">par personne</span><span className="tc-per" style={{display:'block',fontSize:'11px',opacity:'.6',marginTop:'2px'}}>{"à"} partir de 3 participants</span>
                 </div>
               </div>
               <div className="tc-features">
@@ -138,7 +138,7 @@ const FormationPricing = () => {
                 <div className="tc-price">
                   <span className="tc-amount">1 790</span>
                   <span className="tc-currency">{"€"}</span>
-                  <span className="tc-per">par personne</span>
+                  <span className="tc-per">par personne</span><span className="tc-per" style={{display:'block',fontSize:'11px',opacity:'.6',marginTop:'2px'}}>{"à"} partir de 3 participants</span>
                 </div>
               </div>
               <div className="tc-features">
