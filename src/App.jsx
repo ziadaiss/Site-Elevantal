@@ -67,7 +67,7 @@ function App() {
             <Route path="/cgv" element={<CGVPage />} />
           </Routes>
         </main>
-        <Footer handleNotImplemented={handleNotImplemented} />
+        <Footer />
         <Toaster />
       </div>
     </>
