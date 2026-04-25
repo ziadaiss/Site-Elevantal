@@ -86,7 +86,7 @@ const Navbar = ({
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-base bg-transparent hover:bg-gray-100 rounded-full">Nos outils</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-base bg-transparent hover:bg-gray-100 rounded-full">Ressources</NavigationMenuTrigger>
                     <NavigationMenuContent className="p-0 bg-white rounded-md shadow-lg">
                       <ul className="grid w-[350px] gap-3 p-4">
                         <ListItem href="/generateur-refus" title="Générateur de refus">
@@ -155,7 +155,7 @@ const Navbar = ({
             <Link to="/recruitment-experience-boost" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">L'accompagnement RHévélation</Link>
           </li>
           <li className="pt-2">
-            <span className="block py-2 text-xs font-bold uppercase text-gray-400 tracking-wider">Nos outils</span>
+            <span className="block py-2 text-xs font-bold uppercase text-gray-400 tracking-wider">Ressources</span>
             <Link to="/generateur-refus" onClick={closeMobileMenu} className="block py-2 text-lg font-semibold pl-2">Générateur de refus</Link>
           </li>
           <li>
