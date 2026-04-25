@@ -78,29 +78,27 @@ const Footer = () => {
               <p>L{"'"}agence qui {"é"}l{"è"}ve l{"'"}exp{"é"}rience candidat pour les RH et recruteurs de PME. Des m{"é"}thodes concr{"è"}tes, des outils pr{"ê"}ts {"à"} l{"'"}emploi, des r{"é"}sultats mesurables.</p>
             </div>
 
-            {/* À PROPOS */}
-            <div className="ft-col">
-              <h4>{"À"} propos</h4>
-              <Link to="/qui-sommes-nous">{"À"} propos de nous</Link>
-              <Link to="/formation-rRevelation">Notre m{"é"}thode</Link>
-              <Link to="/newsletter">Newsletter</Link>
-              <Link to="/newsletter">Blog</Link>
-            </div>
-
-            {/* SERVICES */}
+            {/* NOS SERVICES */}
             <div className="ft-col">
               <h4>Nos services</h4>
-              <Link to="/formation-rRevelation">M{"é"}thode RH{"é"}v{"é"}lation</Link>
-              <Link to="/recruitment-experience-boost">Accompagnement 3 mois</Link>
-              <Link to="/tableur-experience-candidat">KPIs Exp{"é"}rience Candidat</Link>
-              <Link to="/generateur-refus">G{"é"}n{"é"}rateur IA de refus</Link>
+              <Link to="/formation-rRevelation">La M{"é"}thode RH{"é"}v{"é"}lation</Link>
+              <Link to="/recruitment-experience-boost">L{"'"}accompagnement RH{"é"}v{"é"}lation</Link>
+            </div>
+
+            {/* RESSOURCES */}
+            <div className="ft-col">
+              <h4>Ressources</h4>
+              <Link to="/generateur-refus">G{"é"}n{"é"}rateur de refus</Link>
+              <Link to="/tableur-experience-candidat">KPIs exp{"é"}rience candidat</Link>
               <Link to="/10-prompts-ia">10 Prompts IA</Link>
             </div>
 
-            {/* SOCIAL */}
+            {/* L'AGENCE */}
             <div className="ft-col">
-              <h4>Suivez-nous</h4>
-              <div className="ft-social">
+              <h4>L{"'"}agence Elevantal</h4>
+              <Link to="/qui-sommes-nous">Qui sommes-nous ?</Link>
+              <Link to="/newsletter">Newsletter</Link>
+              <div className="ft-social" style={{ marginTop: '16px' }}>
                 <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" strokeWidth="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                 </a>
