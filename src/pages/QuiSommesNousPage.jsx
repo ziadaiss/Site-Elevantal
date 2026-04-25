@@ -231,6 +231,7 @@ const QuiSommesNousPage = () => {
 }
 @media(min-width:601px) and (max-width:900px){.ap-actu-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.ap-nl-box{padding:36px 24px}.ap-chart{padding:28px 20px}}
+.ft-wave{background:#040a23 !important}
       `}</style>
 
       <div className="ap-page-bg">
@@ -454,8 +455,6 @@ const QuiSommesNousPage = () => {
 
       </div>
       </div>
-      {/* Bridge dark pour couvrir le gap entre la page et la vague du footer */}
-      <div style={{ background: '#020615', height: '160px', marginBottom: '-160px', position: 'relative', zIndex: 0 }}></div>
     </>
   );
 };
