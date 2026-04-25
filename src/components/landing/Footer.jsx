@@ -105,7 +105,7 @@ const Footer = () => {
                 <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                   <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" strokeWidth="1.8"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="rgba(255,255,255,.5)" stroke="none"/></svg>
                 </a>
-                <a href="mailto:contact@elevantal.com" aria-label="Email">
+                <a href="https://services-elevantal.systeme.io/newsletter" target="_blank" rel="noopener noreferrer" aria-label="Newsletter">
                   <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" strokeWidth="1.8"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg>
                 </a>
               </div>
