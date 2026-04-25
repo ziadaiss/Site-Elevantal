@@ -202,7 +202,7 @@ const QuiSommesNousPage = () => {
 .ap-actu-top{text-align:center;margin-bottom:56px}
 .ap-actu-top h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;letter-spacing:-.02em;margin-bottom:12px;color:#fff}
 .ap-actu-top p{font-size:15px;color:rgba(255,255,255,.45);font-weight:300}
-.ap-actu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1060px;margin:0 auto}
+.ap-actu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1160px;margin:0 auto}
 .ap-actu-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:18px;overflow:hidden;transition:.4s}
 .ap-actu-card:hover{background:rgba(255,255,255,.07);border-color:rgba(82,100,228,.2);transform:translateY(-4px)}
 .ap-actu-thumb{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;background:#0c1b50}
@@ -229,7 +229,7 @@ const QuiSommesNousPage = () => {
 .ap-impact .ap-container{grid-template-columns:1fr}
 .ap-actu-grid{grid-template-columns:1fr}
 }
-@media(min-width:601px) and (max-width:900px){.ap-actu-grid{grid-template-columns:1fr 1fr 1fr}}
+@media(min-width:601px) and (max-width:900px){.ap-actu-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.ap-nl-box{padding:36px 24px}.ap-chart{padding:28px 20px}}
       `}</style>
 
@@ -407,14 +407,29 @@ const QuiSommesNousPage = () => {
 
               <div className="ap-actu-card reveal reveal-d2">
                 <div className="ap-actu-thumb">
-                  <img src="https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/c79cbed83de57836cf956e14f7bff3dc.jpg" alt="L'expérience candidat : incontournable en 2025 ?" />
-                  <div className="ap-actu-tag ap-tag-blog">Article</div>
+                  <img src="https://i.ytimg.com/vi/RSqrte4w-Ss/hq2.jpg" alt="Comment un mail de refus ruine votre marque employeur" />
+                  <div className="ap-actu-tag ap-tag-video">Short</div>
+                  <div className="ap-actu-play"><svg viewBox="0 0 24 24" fill="#fff"><polygon points="8,5 19,12 8,19"/></svg></div>
                 </div>
                 <div className="ap-actu-body">
-                  <div className="ap-actu-date">31 Juil, 2025</div>
-                  <h4>L{"'"}exp{"é"}rience candidat : incontournable en 2025 ?</h4>
-                  <p>L{"'"}exp{"é"}rience candidat est devenue un pilier de la strat{"é"}gie RH. Ignorer son importance, c{"'"}est prendre le risque de perdre les meilleurs talents et de ternir sa marque employeur.</p>
-                  <a href="/blog/experience-candidat-incontournable-2025" className="ap-actu-link">Lire l{"'"}article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                  <div className="ap-actu-date">14 Avril, 2026</div>
+                  <h4>Comment un mail de refus ruine votre marque employeur</h4>
+                  <p>Un simple mail de refus peut d{"é"}truire votre image aupr{"è"}s des candidats. D{"é"}couvrez pourquoi en quelques secondes.</p>
+                  <a href="https://youtube.com/shorts/RSqrte4w-Ss" target="_blank" rel="noopener noreferrer" className="ap-actu-link">Regarder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+              </div>
+
+              <div className="ap-actu-card reveal reveal-d3">
+                <div className="ap-actu-thumb">
+                  <img src="https://i.ytimg.com/vi/w8o7opuKJIs/hq2.jpg" alt="Pourquoi vos candidats vous googlisent avant de postuler" />
+                  <div className="ap-actu-tag ap-tag-video">Short</div>
+                  <div className="ap-actu-play"><svg viewBox="0 0 24 24" fill="#fff"><polygon points="8,5 19,12 8,19"/></svg></div>
+                </div>
+                <div className="ap-actu-body">
+                  <div className="ap-actu-date">16 Avril, 2026</div>
+                  <h4>Pourquoi vos candidats vous googlisent avant de postuler</h4>
+                  <p>Vos candidats vous recherchent en ligne avant m{"ê"}me de postuler. Votre marque employeur est-elle pr{"ê"}te ?</p>
+                  <a href="https://youtube.com/shorts/w8o7opuKJIs" target="_blank" rel="noopener noreferrer" className="ap-actu-link">Regarder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                 </div>
               </div>
 
