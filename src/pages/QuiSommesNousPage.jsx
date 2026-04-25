@@ -380,22 +380,8 @@ const QuiSommesNousPage = () => {
             </div>
             <div className="ap-actu-grid">
 
-              {/* Article — 16 Avril 2026 */}
-              <div className="ap-actu-card reveal">
-                <div className="ap-actu-thumb">
-                  <img src="/images/newsletter-3-cover.png.png" alt="Recruter et attirer : stratégies gagnantes pour PME/ETI" />
-                  <div className="ap-actu-tag ap-tag-blog">Article</div>
-                </div>
-                <div className="ap-actu-body">
-                  <div className="ap-actu-date">16 Avril, 2026</div>
-                  <h4>Recruter et attirer : strat{"é"}gies gagnantes pour PME/ETI</h4>
-                  <p>Dans un march{"é"} o{"ù"} la p{"é"}nurie de talents est omnipr{"é"}sente, il est essentiel pour les PME d{"'"}optimiser leur processus de recrutement afin d{"'"}attirer et de retenir les meilleurs profils...</p>
-                  <a href="/blog/recruter-attirer-strategies-pme-eti" className="ap-actu-link">Lire l{"'"}article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-                </div>
-              </div>
-
               {/* Short — 16 Avril 2026 */}
-              <div className="ap-actu-card reveal reveal-d1">
+              <div className="ap-actu-card reveal">
                 <div className="ap-actu-thumb">
                   <img src="https://i.ytimg.com/vi/w8o7opuKJIs/hq2.jpg" alt="Pourquoi vos candidats vous googlisent avant de postuler" />
                   <div className="ap-actu-tag ap-tag-video">Short</div>
@@ -409,22 +395,22 @@ const QuiSommesNousPage = () => {
                 </div>
               </div>
 
-              {/* Article — 14 Avril 2026 (le plus récent après le short) */}
-              <div className="ap-actu-card reveal reveal-d2">
+              {/* Article — 16 Avril 2026 */}
+              <div className="ap-actu-card reveal reveal-d1">
                 <div className="ap-actu-thumb">
-                  <img src="https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/52edae4d2d6d0b76ce883739c56ee0e7.png" alt="Le vrai coût d'un refus impersonnel" />
+                  <img src="/images/newsletter-3-cover.png.png" alt="Recruter et attirer : stratégies gagnantes pour PME/ETI" />
                   <div className="ap-actu-tag ap-tag-blog">Article</div>
                 </div>
                 <div className="ap-actu-body">
-                  <div className="ap-actu-date">07 Ao{"û"}t, 2025</div>
-                  <h4>Le vrai co{"û"}t d{"'"}un refus impersonnel</h4>
-                  <p>Chaque point de contact avec un candidat est un point de bascule : pour l{"'"}image, la r{"é"}putation et l{"'"}engagement. Et parmi ces points de contact, il y en a un que beaucoup sous-estime encore trop : le message de refus.</p>
-                  <a href="/blog/le-vrai-cout-dun-refus-impersonnel" className="ap-actu-link">Lire l{"'"}article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                  <div className="ap-actu-date">16 Avril, 2026</div>
+                  <h4>Recruter et attirer : strat{"é"}gies gagnantes pour PME/ETI</h4>
+                  <p>Dans un march{"é"} o{"ù"} la p{"é"}nurie de talents est omnipr{"é"}sente, il est essentiel pour les PME d{"'"}optimiser leur processus de recrutement afin d{"'"}attirer et de retenir les meilleurs profils...</p>
+                  <a href="/blog/recruter-attirer-strategies-pme-eti" className="ap-actu-link">Lire l{"'"}article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                 </div>
               </div>
 
               {/* Short — 14 Avril 2026 */}
-              <div className="ap-actu-card reveal reveal-d3">
+              <div className="ap-actu-card reveal reveal-d2">
                 <div className="ap-actu-thumb">
                   <img src="https://i.ytimg.com/vi/RSqrte4w-Ss/hq2.jpg" alt="Comment un mail de refus ruine votre marque employeur" />
                   <div className="ap-actu-tag ap-tag-video">Short</div>
@@ -435,6 +421,20 @@ const QuiSommesNousPage = () => {
                   <h4>Comment un mail de refus ruine votre marque employeur</h4>
                   <p>Un simple mail de refus peut d{"é"}truire votre image aupr{"è"}s des candidats. D{"é"}couvrez pourquoi en quelques secondes.</p>
                   <a href="https://youtube.com/shorts/RSqrte4w-Ss" target="_blank" rel="noopener noreferrer" className="ap-actu-link">Regarder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+              </div>
+
+              {/* Article — 07 Août 2025 */}
+              <div className="ap-actu-card reveal reveal-d3">
+                <div className="ap-actu-thumb">
+                  <img src="https://horizons-cdn.hostinger.com/9fdb5cd6-7395-42e7-a897-ebea996e876c/52edae4d2d6d0b76ce883739c56ee0e7.png" alt="Le vrai coût d'un refus impersonnel" />
+                  <div className="ap-actu-tag ap-tag-blog">Article</div>
+                </div>
+                <div className="ap-actu-body">
+                  <div className="ap-actu-date">07 Ao{"û"}t, 2025</div>
+                  <h4>Le vrai co{"û"}t d{"'"}un refus impersonnel</h4>
+                  <p>Chaque point de contact avec un candidat est un point de bascule : pour l{"'"}image, la r{"é"}putation et l{"'"}engagement. Et parmi ces points de contact, il y en a un que beaucoup sous-estime encore trop : le message de refus.</p>
+                  <a href="/blog/le-vrai-cout-dun-refus-impersonnel" className="ap-actu-link">Lire l{"'"}article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
                 </div>
               </div>
 
