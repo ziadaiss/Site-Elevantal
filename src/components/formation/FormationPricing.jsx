@@ -60,6 +60,8 @@ const FormationPricing = () => {
 .tc-pop .tc-currency{background:linear-gradient(90deg,#5264e4,#427ede,#3598d9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .tc-per{font-size:14px;font-weight:400;color:#9CA3AF}
 .tc-pop .tc-per{color:rgba(255,255,255,.4)}
+.tc-participants{font-size:12px;font-weight:400;color:#9CA3AF;margin-top:8px;font-style:italic}
+.tc-pop .tc-participants{color:rgba(255,255,255,.35)}
 .tc-devis{font-size:36px;font-weight:900;letter-spacing:-.02em;line-height:1}
 .tc-features{display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
 .tc-feat{display:flex;align-items:flex-start;gap:12px;font-size:14px;font-weight:400;color:#374151;line-height:1.5}
@@ -115,8 +117,9 @@ const FormationPricing = () => {
                 <div className="tc-price">
                   <span className="tc-amount">1 590</span>
                   <span className="tc-currency">{"€"}</span>
-                  <span className="tc-per">par personne</span><span className="tc-per" style={{display:'block',fontSize:'11px',opacity:'.6',marginTop:'2px'}}>{"à"} partir de 3 participants</span>
+                  <span className="tc-per">par personne</span>
                 </div>
+                <div className="tc-participants">{"À"} partir de 3 participants</div>
               </div>
               <div className="tc-features">
                 <div className="tc-feat"><CheckIcon /> 1 journ{"é"}e de formation (pr{"é"}sentiel ou distanciel)</div>
@@ -138,8 +141,9 @@ const FormationPricing = () => {
                 <div className="tc-price">
                   <span className="tc-amount">1 790</span>
                   <span className="tc-currency">{"€"}</span>
-                  <span className="tc-per">par personne</span><span className="tc-per" style={{display:'block',fontSize:'11px',opacity:'.6',marginTop:'2px'}}>{"à"} partir de 3 participants</span>
+                  <span className="tc-per">par personne</span>
                 </div>
+                <div className="tc-participants">{"À"} partir de 3 participants</div>
               </div>
               <div className="tc-features">
                 <div className="tc-feat"><CheckIcon /> 1 journ{"é"}e de formation (pr{"é"}sentiel ou distanciel)</div>
