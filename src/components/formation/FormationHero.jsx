@@ -134,7 +134,7 @@ const FormationHero = ({ handleNotImplemented }) => {
               </div>
               <div className="fh-pill">
                 <svg viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#3598d9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                6 s{"é"}ances de coaching
+                S{"é"}ances de coaching personnalis{"é"}es
               </div>
               <div className="fh-pill">
                 <svg viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#3598d9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -201,7 +201,7 @@ const FormationHero = ({ handleNotImplemented }) => {
               <div className="fh-float-3">
                 <div className="fh-f3-text">
                   <svg viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.5" stroke="#f5c075" strokeWidth="1.5"/><path d="M7 4.5v3l2 1" stroke="#f5c075" strokeWidth="1.5" strokeLinecap="round"/></svg>
-                  6 s{"é"}ances coaching post-formation
+                  S{"é"}ances de coaching personnalis{"é"}es
                 </div>
               </div>
 
