@@ -123,7 +123,7 @@ const QuiSommesNousPage = () => {
       </Helmet>
 
       <style>{`
-.ap-page-bg{background:linear-gradient(180deg,#040a23 0%,#060e2d 15%,#09153f 35%,#0c1b50 55%,#102364 75%,#132873 100%);background-attachment:fixed;min-height:100vh}
+.ap-page-bg{background:linear-gradient(180deg,#040a23 0%,#060e2d 15%,#09153f 35%,#0c1b50 55%,#102364 75%,#132873 100%);background-attachment:fixed;min-height:100vh;padding-bottom:140px;margin-bottom:-140px}
 .ap-dots-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
 .ap-content-wrap{position:relative;z-index:1}
 .ap-grad{background:linear-gradient(90deg,#5264e4,#427ede,#3598d9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
