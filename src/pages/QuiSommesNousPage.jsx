@@ -231,7 +231,7 @@ const QuiSommesNousPage = () => {
 }
 @media(min-width:601px) and (max-width:900px){.ap-actu-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.ap-nl-box{padding:36px 24px}.ap-chart{padding:28px 20px}}
-.ft-wave{background:#040a23 !important}
+.ft-wave{display:none !important}
       `}</style>
 
       <div className="ap-page-bg">
@@ -452,6 +452,16 @@ const QuiSommesNousPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Transition fluide vers le footer */}
+        <div className="ap-wave" style={{ background: 'transparent' }}>
+          <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+            <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 L1440,140 L0,140 Z" fill="rgba(2,6,21,.25)"/>
+            <path d="M0,70 C300,100 600,30 900,70 C1100,90 1300,45 1440,70 L1440,140 L0,140 Z" fill="rgba(2,6,21,.5)"/>
+            <path d="M0,90 C360,110 720,75 1080,90 C1260,98 1380,85 1440,90 L1440,140 L0,140 Z" fill="rgba(2,6,21,.8)"/>
+            <path d="M0,110 C360,120 720,100 1080,110 C1260,115 1380,105 1440,110 L1440,140 L0,140 Z" fill="#020615"/>
+          </svg>
+        </div>
 
       </div>
       </div>
