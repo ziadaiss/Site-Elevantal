@@ -6,7 +6,6 @@ import EbookForYou from '@/components/ebook/EbookForYou';
 import EbookGuideContent from '@/components/ebook/EbookGuideContent';
 import EbookForm from '@/components/ebook/EbookForm';
 import AboutMe from '@/components/landing/AboutMe';
-import Testimonials from '@/components/landing/Testimonials';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -74,10 +73,7 @@ const EbookPage = ({
       <EbookGuideContent />
       <EbookForm handleGetEbook={handleGetEbook} />
 
-      <WhiteToGray grayBg="#f8fafc" />
-      <Testimonials />
-
-      <LightToDark lightBg="#F8FAFC" darkBg="#03091f" />
+      <LightToDark lightBg="#ffffff" darkBg="#03091f" />
       <section className="py-16 md:py-24 bg-brand-blue-gradient text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div 

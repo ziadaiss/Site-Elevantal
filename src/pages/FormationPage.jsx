@@ -4,7 +4,6 @@ import FormationHero from '@/components/formation/FormationHero';
 import FormationCoreSkills from '@/components/formation/FormationCoreSkills';
 import FormationTargetAudience from '@/components/formation/FormationTargetAudience';
 import AboutMe from '@/components/landing/AboutMe';
-import Testimonials from '@/components/landing/Testimonials';
 import FormationFaq from '@/components/formation/FormationFaq';
 import FormationPricing from '@/components/formation/FormationPricing';
 import FormationContent from '@/components/formation/FormationContent';
@@ -31,22 +30,6 @@ const FormationPage = ({ handleNotImplemented }) => {
     "url": "https://elevantal.com/formation-rRevelation"
   };
 
-  // Event delegation to catch the click on "Voir les +4 avis" link in the Hero section
-  // This allows us to implement the scroll functionality without modifying the hidden FormationHero file
-  const handleHeroClick = (e) => {
-    // Find closest interactive element or use target
-    const target = e.target.closest('a') || e.target.closest('button') || e.target;
-    
-    // Check if this is the reviews link by its text content
-    if (target && target.innerText && target.innerText.includes("Voir les +4 avis")) {
-      e.preventDefault();
-      const testimonialsSection = document.getElementById('temoignages');
-      if (testimonialsSection) {
-        testimonialsSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
-
   return (
     <>
       <Helmet>
@@ -55,10 +38,7 @@ const FormationPage = ({ handleNotImplemented }) => {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      {/* Wrapper to intercept clicks from FormationHero for the reviews link */}
-      <div onClick={handleHeroClick} className="w-full">
-        <FormationHero handleNotImplemented={handleNotImplemented} />
-      </div>
+      <FormationHero handleNotImplemented={handleNotImplemented} />
       <DarkToLight darkBg="#132873" lightBg="#ffffff" />
       <FormationTargetAudience />
 
@@ -70,8 +50,6 @@ const FormationPage = ({ handleNotImplemented }) => {
       <FormationContent /> {/* "La valeur réelle de ce que vous obtenez" section */}
       <DarkToLight darkBg="#132873" lightBg="#F3F4F6" />
       <FormationGarantie />
-
-      <Testimonials />
 
       <WhiteToGray whiteBg="#f8fafc" grayBg="#F3F4F6" />
       <FormationPricing handleNotImplemented={handleNotImplemented} />

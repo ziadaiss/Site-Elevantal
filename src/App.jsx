@@ -8,7 +8,6 @@ import Footer from '@/components/landing/Footer';
 import HomePage from '@/pages/HomePage';
 import FormationPage from '@/pages/FormationPage';
 import AgencePage from '@/pages/AgencePage';
-import AvisClientsPage from '@/pages/AvisClientsPage';
 import AProposPage from '@/pages/AProposPage';
 import BlogPage from '@/pages/BlogPage';
 import RecruitmentBoostPage from '@/pages/RecruitmentBoostPage';
@@ -55,7 +54,6 @@ function App() {
             <Route path="/generateur-refus" element={<GenerateurRefusPage />} />
             <Route path="/10-prompts-ia" element={<PromptsIAPage />} />
             <Route path="/agence" element={<AgencePage handleNotImplemented={handleNotImplemented} />} />
-            <Route path="/avis-clients" element={<AvisClientsPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/a-propos" element={<AProposPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/qui-sommes-nous" element={<QuiSommesNousPage handleNotImplemented={handleNotImplemented} />} />
             <Route path="/newsletter" element={<BlogPage handleNotImplemented={handleNotImplemented} />} />

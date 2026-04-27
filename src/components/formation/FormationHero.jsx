@@ -4,15 +4,6 @@ const FormationHero = ({ handleNotImplemented }) => {
   const sectionRef = useRef(null);
   const calendlyUrl = "https://calendly.com/contact-elevantal/premier-echange";
 
-  const scrollToTestimonials = () => {
-    const el = document.getElementById('temoignages-formation');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    } else if (handleNotImplemented) {
-      handleNotImplemented();
-    }
-  };
-
   useEffect(() => {
     const els = sectionRef.current ? sectionRef.current.querySelectorAll('.fh-reveal') : [];
     const obs = new IntersectionObserver(function (entries) {
@@ -153,14 +144,6 @@ const FormationHero = ({ handleNotImplemented }) => {
               </a>
             </div>
 
-            <div className="fh-trust fh-reveal fh-reveal-d4">
-              <div className="fh-stars">
-                {[0,1,2,3,4].map(i => (
-                  <svg key={i} viewBox="0 0 16 16" fill="#FACC15"><path d="M8 1l2.2 4.5 5 .7-3.6 3.5.9 5L8 12.4 3.5 14.7l.9-5L.8 6.2l5-.7z"/></svg>
-                ))}
-              </div>
-              <span className="fh-trust-text"><button onClick={scrollToTestimonials}>Voir les +4 avis</button></span>
-            </div>
           </div>
 
           <div className="fh-right fh-reveal fh-reveal-d2">

@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import Testimonials from '@/components/landing/Testimonials';
 import useScrollReveal from '@/hooks/useScrollReveal';
-import { WhiteToGray } from '@/components/common/WaveSeparator';
 
 const QuiSommesNousPage = () => {
   const canvasRef = useRef(null);
@@ -354,14 +352,8 @@ const QuiSommesNousPage = () => {
           </div>
         </section>
 
-        {/* VAGUE blanc → gris */}
-        <WhiteToGray grayBg="#f8fafc" />
-
-        {/* AVIS CLIENTS */}
-        <Testimonials />
-
-        {/* VAGUE gris → sombre */}
-        <div className="ap-wave" style={{ background: '#f8fafc' }}>
+        {/* VAGUE blanc → sombre */}
+        <div className="ap-wave" style={{ background: '#fff' }}>
           <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
             <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,140 L0,140 Z" fill="rgba(200,210,240,.4)"/>
             <path d="M0,55 C300,90 600,15 900,55 C1100,80 1300,25 1440,55 L1440,140 L0,140 Z" fill="rgba(120,150,220,.35)"/>

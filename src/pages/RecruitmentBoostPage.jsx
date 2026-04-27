@@ -5,7 +5,6 @@ import WhyImproveExperience from '@/components/recruitment-boost/WhyImproveExper
 import ForYouSection from '@/components/recruitment-boost/ForYouSection';
 import AccompagnementTimeline from '@/components/recruitment-boost/AccompagnementTimeline';
 import AboutMe from '@/components/landing/AboutMe';
-import Testimonials from '@/components/landing/Testimonials';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import useScrollReveal from '@/hooks/useScrollReveal';
@@ -60,7 +59,6 @@ const RecruitmentBoostPage = ({ handleNotImplemented }) => {
       <DarkToLight darkBg="#132873" lightBg="#ffffff" />
       <AboutMe />
       <WhiteToGray grayBg="#f8fafc" />
-      <Testimonials />
       <section className="py-16 md:py-24 bg-gray-50">
         <motion.div 
           initial={{ opacity: 0, y: 50 }} 
